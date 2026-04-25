@@ -52,84 +52,132 @@
     <loc>https://craigclaw.github.io/meridianidconcrete/boise-id.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://craigclaw.github.io/meridianidconcrete/meridian-id.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://craigclaw.github.io/meridianidconcrete/eagle-id.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://craigclaw.github.io/meridianidconcrete/kuna-id.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://craigclaw.github.io/meridianidconcrete/nampa-id.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://craigclaw.github.io/meridianidconcrete/star-id.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://craigclaw.github.io/meridianidconcrete/about.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://craigclaw.github.io/meridianidconcrete/contact.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://craigclaw.github.io/meridianidconcrete/blog.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://craigclaw.github.io/meridianidconcrete/blog-concrete-vs-asphalt.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://craigclaw.github.io/meridianidconcrete/blog-driveway-replacement.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://craigclaw.github.io/meridianidconcrete/blog-patio-finishes.html</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://craigclaw.github.io/meridianidconcrete/privacy.html</loc>
+    <loc>https://craigclaw.github.io/meridianidconcrete/blog-concrete-driveway-cost.html</loc>
     <lastmod>2026-04-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://craigclaw.github.io/meridianidconcrete/terms.html</loc>
+    <loc>https://craigclaw.github.io/meridianidconcrete/blog-concrete-patio-ideas.html</loc>
     <lastmod>2026-04-25</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://craigclaw.github.io/meridianidconcrete/blog-concrete-repair-vs-replace.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://craigclaw.github.io/meridianidconcrete/blog-stamped-concrete-patterns.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://craigclaw.github.io/meridianidconcrete/blog-concrete-foundation-tips.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://craigclaw.github.io/meridianidconcrete/blog-concrete-winter-maintenance.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://craigclaw.github.io/meridianidconcrete/blog-concrete-patio-cost.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://craigclaw.github.io/meridianidconcrete/blog-stamped-concrete-vs-pavers.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://craigclaw.github.io/meridianidconcrete/blog-concrete-driveway-maintenance.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://craigclaw.github.io/meridianidconcrete/blog-commercial-concrete-treasure-valley.html</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
