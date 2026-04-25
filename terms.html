@@ -1,47 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Terms of Service | Meridian Concrete Solutions</title>
-<meta name="description" content="Terms of service for Meridian Concrete Solutions.">
-<meta name="robots" content="noindex, follow">
-<link rel="canonical" href="https://meridianidconcrete.com/terms.html">
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | Meridian Concrete Solutions</title>
+    <meta name="description" content="Terms of Service for Meridian Concrete Solutions. Read our policies on estimates, payment, warranties, and service agreements for concrete work in Idaho.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://meridianidconcrete.com/terms.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Terms of Service | Meridian Concrete Solutions">
+    <meta property="og:description" content="Our terms and conditions for concrete services including estimates, payment terms, warranties, and liability limitations.">
+    <meta property="og:url" content="https://meridianidconcrete.com/terms.html">
+    <meta property="og:site_name" content="Meridian Concrete Solutions">
+    <meta name="twitter:card" content="summary">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Terms of Service",
+      "description": "Terms of service for Meridian Concrete Solutions.",
+      "url": "https://meridianidconcrete.com/terms.html"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://meridianidconcrete.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Terms of Service"}
+      ]
+    }
+    </script>
+    <style>
+        :root {
+            --bg-primary: #f4f3ee;
+            --bg-secondary: #eeede6;
+            --bg-inverse: #191817;
+            --text-primary: #191817;
+            --text-secondary: #5a554e;
+            --text-muted: #8a847a;
+            --accent: #c96442;
+            --accent-hover: #b55738;
+            --border: #d8d3c8;
+            --surface: #ffffff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.65;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            line-height: 1.2;
+            text-wrap: balance;
+        }
+        h1 { font-size: clamp(32px, 5vw, 52px); margin-bottom: 16px; }
+        h2 { font-size: clamp(26px, 4vw, 40px); margin-bottom: 12px; margin-top: 32px; }
+        h3 { font-size: clamp(21px, 3vw, 26px); margin-bottom: 10px; margin-top: 24px; }
+        p { margin-bottom: 16px; text-wrap: pretty; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .content-width { max-width: 720px; margin: 0 auto; }
+        .section { padding: 80px 0; }
+        .site-header {
+            background: var(--bg-primary);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--text-primary);
+        }
+        .logo:hover { text-decoration: none; }
+        .logo-icon { flex-shrink: 0; }
+        .main-nav {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        .main-nav a {
+            color: var(--text-primary);
+            font-weight: 500;
+            padding: 8px 0;
+            position: relative;
+        }
+        .main-nav a:not(.btn):hover { text-decoration: none; }
+        .main-nav a:not(.btn):not(.active)::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.2s;
+        }
+        .main-nav a:not(.btn):hover::after { width: 100%; }
+        .main-nav a.active { color: var(--accent); }
+        .header-phone {
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--accent);
+        }
+        .nav-toggle { display: none; background: none; border: none; font-size: 24px; cursor: pointer; }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-primary {
+            background: var(--accent);
+            color: var(--bg-primary);
+        }
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            text-decoration: none;
+        }
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+        .btn-secondary:hover {
+            background: var(--bg-secondary);
+            text-decoration: none;
+        }
+        .hero {
+            padding: 80px 0;
+            background: var(--bg-secondary);
+        }
+        .hero .eyebrow {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+        .terms-section {
+            background: var(--surface);
+            padding: 24px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin-bottom: 24px;
+        }
+        ul { margin: 16px 0; padding-left: 24px; }
+        li { margin-bottom: 8px; }
+        .site-footer {
+            background: var(--bg-inverse);
+            color: var(--bg-primary);
+            padding: 64px 0 24px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            margin-bottom: 48px;
+        }
+        .footer-col h3 {
+            font-size: 18px;
+            margin-bottom: 16px;
+            color: var(--bg-primary);
+        }
+        .footer-col p {
+            font-size: 14px;
+            margin-bottom: 8px;
+            opacity: 0.9;
+        }
+        .footer-col a {
+            display: block;
+            color: var(--bg-primary);
+            opacity: 0.8;
+            font-size: 14px;
+            padding: 4px 0;
+        }
+        .footer-col a:hover {
+            opacity: 1;
+            text-decoration: none;
+            color: var(--accent);
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(244, 243, 238, 0.2);
+            padding-top: 24px;
+            text-align: center;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+        .mobile-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--bg-inverse);
+            padding: 16px;
+            z-index: 1000;
+        }
+        .btn-full { width: 100%; text-align: center; }
+        @media (max-width: 900px) {
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .main-nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--bg-primary);
+                flex-direction: column;
+                padding: 16px 24px;
+                border-bottom: 1px solid var(--border);
+            }
+            .main-nav.open { display: flex; }
+            .nav-toggle { display: block; }
+            .header-phone { display: none; }
+            .mobile-cta { display: block; }
+            .footer-grid { grid-template-columns: 1fr; }
+            body { padding-bottom: 60px; }
+        }
+    </style>
 </head>
 <body>
-<header><div class="container"><div class="logo"><div class="logo-icon">MC</div><div class="logo-text"><h1>Meridian Concrete Solutions</h1><p>Professional Concrete Services</p></div></div><div class="header-phone"><a href="tel:+12085550147">(208) 555-0147</a></div></div></header>
-<nav><div class="container"><a href="index.html">Home</a><a href="concrete-driveways.html">Driveways</a><a href="foundations-slabs.html">Foundations</a><a href="concrete-patios.html">Patios</a><a href="concrete-sidewalks.html">Sidewalks</a><a href="retaining-walls.html">Retaining Walls</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div></nav>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="Meridian Concrete Solutions Home">
+                <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#c96442"/><path d="M8 22h16M8 18h16M8 14h16" stroke="#f4f3ee" stroke-width="2"/></svg>
+                <span class="logo-text">Meridian Concrete</span>
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <a href="concrete-driveways.html">Driveways</a>
+                <a href="concrete-patios.html">Patios</a>
+                <a href="stamped-concrete.html">Stamped</a>
+                <a href="concrete-repair.html">Repair</a>
+                <a href="concrete-sidewalks.html">Sidewalks</a>
+                <a href="foundations-slabs.html">Foundations</a>
+                <a href="retaining-walls.html">Walls</a>
+                <a href="contact.html" class="btn btn-primary">Free Estimate</a>
+            </nav>
+            <a href="tel:+12085550147" class="header-phone">(208) 555-0147</a>
+            <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('mainNav').classList.toggle('open')">&#9776;</button>
+        </div>
+    </header>
 
-<section class="page-content">
-<div class="container" style="max-width:800px;">
-<h1>Terms of Service</h1>
-<p style="color:#5a5a5a;">Last updated: January 2024</p>
+    <main>
+        <section class="hero">
+            <div class="container content-width">
+                <span class="eyebrow">Legal Information</span>
+                <h1>Terms of Service</h1>
+                <p class="lead">Last updated: January 1, 2024. These terms govern the relationship between Meridian Concrete Solutions and our clients for all concrete services provided.</p>
+            </div>
+        </section>
 
-<h2>Agreement to Terms</h2>
-<p>By accessing and using the Meridian Concrete Solutions website, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use our website.</p>
+        <section class="section">
+            <div class="container content-width">
+                <div class="terms-section">
+                    <h2>1. Services Provided</h2>
+                    <p>Meridian Concrete Solutions provides residential and commercial concrete services including but not limited to: driveway installation and replacement, patio construction, stamped concrete, concrete repair, sidewalks and walkways, foundations and slabs, and retaining walls. All services are performed in accordance with Idaho building codes and industry standards.</p>
+                </div>
 
-<h2>Services</h2>
-<p>Meridian Concrete Solutions provides concrete contracting services including but not limited to driveway installation and replacement, foundation and slab work, concrete patios, sidewalks, and retaining walls in the Boise metro area. All services are subject to a written contract agreed upon by both parties before work begins.</p>
+                <div class="terms-section">
+                    <h2>2. Estimates and Quotes</h2>
+                    <p>We provide free, written estimates for all projects. Estimates are valid for 30 days from the date issued. An estimate is not a guaranteed price — final pricing may change if:</p>
+                    <ul>
+                        <li>Site conditions differ from what was visible during the estimate (hidden debris, poor soil, undocumented utilities)</li>
+                        <li>You request changes to the scope of work after approval</li>
+                        <li>Material costs change significantly between estimate and project start (more than 10%)</li>
+                        <li>Access issues require additional equipment or labor</li>
+                    </ul>
+                    <p>Any price changes will be communicated and approved in writing before work proceeds.</p>
+                </div>
 
-<h2>Estimates</h2>
-<p>Free estimates are provided as a courtesy and are based on the information available at the time of the estimate. Final project costs may vary based on conditions discovered during construction. We will communicate any changes before proceeding with additional work.</p>
+                <div class="terms-section">
+                    <h2>3. Payment Terms</h2>
+                    <p>Payment terms vary by project size:</p>
+                    <ul>
+                        <li><strong>Projects under $5,000:</strong> Full payment due upon completion</li>
+                        <li><strong>Projects $5,000–$15,000:</strong> 50% deposit required to schedule, 50% due upon completion</li>
+                        <li><strong>Projects over $15,000:</strong> Custom payment schedule based on project milestones</li>
+                    </ul>
+                    <p>We accept cash, check, and major credit cards. A 3% processing fee applies to credit card payments. Work will not commence until the required deposit is received. Final payment is due before materials or equipment are removed from the site.</p>
+                </div>
 
-<h2>Warranties</h2>
-<p>We warrant that our concrete workmanship will meet industry standards. Concrete is a natural material subject to cracking, color variation, and weather-related effects. We do not warranty against natural settling, cracking from freeze-thaw cycles, or damage from de-icing chemicals. Specific warranty terms are included in your project contract.</p>
+                <div class="terms-section">
+                    <h2>4. Scheduling and Completion</h2>
+                    <p>We will provide an estimated start date and completion timeline. However, concrete work is weather-dependent. Rain, extreme heat, or freezing temperatures may delay pouring or require additional curing time. We will communicate any delays as soon as possible. We are not liable for delays caused by weather, material shortages, or circumstances beyond our reasonable control.</p>
+                </div>
 
-<h2>Limitation of Liability</h2>
-<p>Meridian Concrete Solutions shall not be liable for any indirect, incidental, or consequential damages arising from the use of our services or website. Our total liability is limited to the amount paid for the specific service giving rise to the claim.</p>
+                <div class="terms-section">
+                    <h2>5. Property Access and Preparation</h2>
+                    <p>You agree to provide clear access to the work area. This includes:</p>
+                    <ul>
+                        <li>Removing vehicles, furniture, and obstacles from the work zone</li>
+                        <li>Ensuring gates are unlocked and accessible</li>
+                        <li>Identifying and marking any underground utilities, sprinkler lines, or septic tanks</li>
+                        <li>Securing pets indoors during work hours</li>
+                    </ul>
+                    <p>We are not responsible for damage to items left in the work area or for undocumented underground utilities.</p>
+                </div>
 
-<h2>Website Content</h2>
-<p>The content on this website is provided for general informational purposes only. While we strive to keep information accurate and up-to-date, we make no warranties about the completeness or accuracy of the information. Project costs, timelines, and specifications should be confirmed through a direct consultation.</p>
+                <div class="terms-section">
+                    <h2>6. Warranties</h2>
+                    <p><strong>Workmanship Warranty:</strong> We warrant our workmanship for 2 years from the date of completion. This covers defects in installation such as improper finishing, inadequate reinforcement, or failure to follow agreed specifications.</p>
+                    <p><strong>Material Warranty:</strong> Concrete materials are warranted according to manufacturer specifications, typically 1 year for standard mixes.</p>
+                    <p><strong>What's Not Covered:</strong> Normal wear and tear, cracking due to soil settlement or tree roots, damage from vehicles exceeding weight limits, damage from de-icing salts, cracks from freeze-thaw cycles if sealer was not maintained, and any damage caused by third parties or acts of nature.</p>
+                    <p><strong>Warranty Claims:</strong> To make a warranty claim, contact us in writing within the warranty period. We will inspect the issue and determine if it's covered. Warranty service does not extend the original warranty period.</p>
+                </div>
 
-<h2>Contact</h2>
-<p>Meridian Concrete Solutions<br>1234 E Fairview Ave<br>Meridian, ID 83642<br><a href="tel:+12085550147">(208) 555-0147</a><br><a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a></p>
-</div>
-</section>
+                <div class="terms-section">
+                    <h2>7. Limitation of Liability</h2>
+                    <p>Meridian Concrete Solutions' liability is limited to the contract price of the project. We are not liable for:</p>
+                    <ul>
+                        <li>Consequential, incidental, or indirect damages</li>
+                        <li>Loss of property value or use</li>
+                        <li>Delays or schedule impacts</li>
+                        <li>Damage from pre-existing conditions we could not reasonably detect</li>
+                    </ul>
+                    <p>Our total liability for any claim, whether in contract or tort, shall not exceed the amount paid for the specific service giving rise to the claim.</p>
+                </div>
 
-<footer><div class="container"><div class="footer-bottom"><p>&copy; 2024 Meridian Concrete Solutions. All rights reserved.</p></div></div></footer>
-<script src="js/main.js"></script>
+                <div class="terms-section">
+                    <h2>8. Cancellations</h2>
+                    <p>You may cancel a scheduled project up to 72 hours before the start date for a full refund of any deposit. Cancellations within 72 hours may forfeit the deposit to cover scheduling and material costs. If we cancel a project, you will receive a full refund of all payments.</p>
+                </div>
+
+                <div class="terms-section">
+                    <h2>9. Permits and Inspections</h2>
+                    <p>For projects requiring permits, we will obtain necessary permits on your behalf. Permit fees are included in your estimate unless otherwise noted. You are responsible for any HOA approvals or architectural review requirements. We will coordinate required inspections, but you are responsible for any fees associated with failed inspections caused by changes you request.</p>
+                </div>
+
+                <div class="terms-section">
+                    <h2>10. Dispute Resolution</h2>
+                    <p>Any disputes arising from our services shall first be addressed through good-faith negotiation. If we cannot resolve the dispute directly, both parties agree to mediation before pursuing legal action. Any legal proceedings shall be governed by Idaho law and brought in Ada County, Idaho.</p>
+                </div>
+
+                <div class="terms-section">
+                    <h2>11. Changes to Terms</h2>
+                    <p>We may update these terms from time to time. The terms in effect at the time of your estimate or contract signing govern your project. Continued use of our services constitutes acceptance of these terms.</p>
+                </div>
+
+                <div class="terms-section">
+                    <h2>12. Contact Information</h2>
+                    <p>For questions about these terms or to discuss your project:</p>
+                    <p>
+                        <strong>Meridian Concrete Solutions</strong><br>
+                        123 E Fairview Ave<br>
+                        Meridian, ID 83642<br>
+                        Phone: <a href="tel:+12085550147">(208) 555-0147</a><br>
+                        Email: <a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Meridian Concrete Solutions</h3>
+                <p>123 E Fairview Ave<br>Meridian, ID 83642</p>
+                <p><a href="tel:+12085550147">(208) 555-0147</a></p>
+                <p><a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a></p>
+                <p>Mon–Sat: 7:00 AM – 6:00 PM</p>
+            </div>
+            <div class="footer-col">
+                <h3>Services</h3>
+                <a href="concrete-driveways.html">Concrete Driveways</a>
+                <a href="concrete-patios.html">Concrete Patios</a>
+                <a href="stamped-concrete.html">Stamped Concrete</a>
+                <a href="concrete-repair.html">Concrete Repair</a>
+                <a href="concrete-sidewalks.html">Sidewalks & Walkways</a>
+                <a href="foundations-slabs.html">Foundations & Slabs</a>
+                <a href="retaining-walls.html">Retaining Walls</a>
+            </div>
+            <div class="footer-col">
+                <h3>Service Areas</h3>
+                <a href="boise-id.html">Boise</a>
+                <a href="meridian-id.html">Meridian</a>
+                <a href="eagle-id.html">Eagle</a>
+                <a href="kuna-id.html">Kuna</a>
+                <a href="nampa-id.html">Nampa</a>
+                <a href="star-id.html">Star</a>
+            </div>
+            <div class="footer-col">
+                <h3>Company</h3>
+                <a href="about.html">About Us</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2024 Meridian Concrete Solutions. All rights reserved. Licensed & insured.</p>
+        </div>
+    </footer>
+
+    <div class="mobile-cta">
+        <a href="tel:+12085550147" class="btn btn-primary btn-full">Call (208) 555-0147</a>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,57 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy | Meridian Concrete Solutions</title>
-<meta name="description" content="Privacy policy for Meridian Concrete Solutions. Learn how we protect your personal information.">
-<meta name="robots" content="noindex, follow">
-<link rel="canonical" href="https://meridianidconcrete.com/privacy.html">
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Meridian Concrete Solutions</title>
+    <meta name="description" content="Privacy Policy for Meridian Concrete Solutions. Learn how we collect, use, and protect your personal information. We never sell your data to third parties.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://meridianidconcrete.com/privacy.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Privacy Policy | Meridian Concrete Solutions">
+    <meta property="og:description" content="Your privacy matters. Read our policy on data collection, cookies, and how we protect your personal information.">
+    <meta property="og:url" content="https://meridianidconcrete.com/privacy.html">
+    <meta property="og:site_name" content="Meridian Concrete Solutions">
+    <meta name="twitter:card" content="summary">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Privacy Policy",
+      "description": "Privacy policy for Meridian Concrete Solutions website.",
+      "url": "https://meridianidconcrete.com/privacy.html"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://meridianidconcrete.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Privacy Policy"}
+      ]
+    }
+    </script>
+    <style>
+        :root {
+            --bg-primary: #f4f3ee;
+            --bg-secondary: #eeede6;
+            --bg-inverse: #191817;
+            --text-primary: #191817;
+            --text-secondary: #5a554e;
+            --text-muted: #8a847a;
+            --accent: #c96442;
+            --accent-hover: #b55738;
+            --border: #d8d3c8;
+            --surface: #ffffff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.65;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            line-height: 1.2;
+            text-wrap: balance;
+        }
+        h1 { font-size: clamp(32px, 5vw, 52px); margin-bottom: 16px; }
+        h2 { font-size: clamp(26px, 4vw, 40px); margin-bottom: 12px; margin-top: 32px; }
+        h3 { font-size: clamp(21px, 3vw, 26px); margin-bottom: 10px; margin-top: 24px; }
+        p { margin-bottom: 16px; text-wrap: pretty; }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .content-width { max-width: 720px; margin: 0 auto; }
+        .section { padding: 80px 0; }
+        .site-header {
+            background: var(--bg-primary);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--text-primary);
+        }
+        .logo:hover { text-decoration: none; }
+        .logo-icon { flex-shrink: 0; }
+        .main-nav {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        .main-nav a {
+            color: var(--text-primary);
+            font-weight: 500;
+            padding: 8px 0;
+            position: relative;
+        }
+        .main-nav a:not(.btn):hover { text-decoration: none; }
+        .main-nav a:not(.btn):not(.active)::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.2s;
+        }
+        .main-nav a:not(.btn):hover::after { width: 100%; }
+        .main-nav a.active { color: var(--accent); }
+        .header-phone {
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--accent);
+        }
+        .nav-toggle { display: none; background: none; border: none; font-size: 24px; cursor: pointer; }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn-primary {
+            background: var(--accent);
+            color: var(--bg-primary);
+        }
+        .btn-primary:hover {
+            background: var(--accent-hover);
+            text-decoration: none;
+        }
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+        }
+        .btn-secondary:hover {
+            background: var(--bg-secondary);
+            text-decoration: none;
+        }
+        .hero {
+            padding: 80px 0;
+            background: var(--bg-secondary);
+        }
+        .hero .eyebrow {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+        .policy-section {
+            background: var(--surface);
+            padding: 24px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            margin-bottom: 24px;
+        }
+        ul { margin: 16px 0; padding-left: 24px; }
+        li { margin-bottom: 8px; }
+        .site-footer {
+            background: var(--bg-inverse);
+            color: var(--bg-primary);
+            padding: 64px 0 24px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            margin-bottom: 48px;
+        }
+        .footer-col h3 {
+            font-size: 18px;
+            margin-bottom: 16px;
+            color: var(--bg-primary);
+        }
+        .footer-col p {
+            font-size: 14px;
+            margin-bottom: 8px;
+            opacity: 0.9;
+        }
+        .footer-col a {
+            display: block;
+            color: var(--bg-primary);
+            opacity: 0.8;
+            font-size: 14px;
+            padding: 4px 0;
+        }
+        .footer-col a:hover {
+            opacity: 1;
+            text-decoration: none;
+            color: var(--accent);
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(244, 243, 238, 0.2);
+            padding-top: 24px;
+            text-align: center;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+        .mobile-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--bg-inverse);
+            padding: 16px;
+            z-index: 1000;
+        }
+        .btn-full { width: 100%; text-align: center; }
+        @media (max-width: 900px) {
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 768px) {
+            .main-nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--bg-primary);
+                flex-direction: column;
+                padding: 16px 24px;
+                border-bottom: 1px solid var(--border);
+            }
+            .main-nav.open { display: flex; }
+            .nav-toggle { display: block; }
+            .header-phone { display: none; }
+            .mobile-cta { display: block; }
+            .footer-grid { grid-template-columns: 1fr; }
+            body { padding-bottom: 60px; }
+        }
+    </style>
 </head>
 <body>
-<header><div class="container"><div class="logo"><div class="logo-icon">MC</div><div class="logo-text"><h1>Meridian Concrete Solutions</h1><p>Professional Concrete Services</p></div></div><div class="header-phone"><a href="tel:+12085550147">(208) 555-0147</a></div></div></header>
-<nav><div class="container"><a href="index.html">Home</a><a href="concrete-driveways.html">Driveways</a><a href="foundations-slabs.html">Foundations</a><a href="concrete-patios.html">Patios</a><a href="concrete-sidewalks.html">Sidewalks</a><a href="retaining-walls.html">Retaining Walls</a><a href="about.html">About</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a></div></nav>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="Meridian Concrete Solutions Home">
+                <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#c96442"/><path d="M8 22h16M8 18h16M8 14h16" stroke="#f4f3ee" stroke-width="2"/></svg>
+                <span class="logo-text">Meridian Concrete</span>
+            </a>
+            <nav class="main-nav" id="mainNav">
+                <a href="concrete-driveways.html">Driveways</a>
+                <a href="concrete-patios.html">Patios</a>
+                <a href="stamped-concrete.html">Stamped</a>
+                <a href="concrete-repair.html">Repair</a>
+                <a href="concrete-sidewalks.html">Sidewalks</a>
+                <a href="foundations-slabs.html">Foundations</a>
+                <a href="retaining-walls.html">Walls</a>
+                <a href="contact.html" class="btn btn-primary">Free Estimate</a>
+            </nav>
+            <a href="tel:+12085550147" class="header-phone">(208) 555-0147</a>
+            <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('mainNav').classList.toggle('open')">&#9776;</button>
+        </div>
+    </header>
 
-<section class="page-content">
-<div class="container" style="max-width:800px;">
-<h1>Privacy Policy</h1>
-<p style="color:#5a5a5a;">Last updated: January 2024</p>
+    <main>
+        <section class="hero">
+            <div class="container content-width">
+                <span class="eyebrow">Legal Information</span>
+                <h1>Privacy Policy</h1>
+                <p class="lead">Last updated: January 1, 2024. This policy explains how Meridian Concrete Solutions collects, uses, and protects your personal information.</p>
+            </div>
+        </section>
 
-<h2>Information We Collect</h2>
-<p>When you contact us through our website, phone, or email, we may collect your name, phone number, email address, and project details. This information is used solely to provide you with concrete service estimates and to communicate about your project.</p>
+        <section class="section">
+            <div class="container content-width">
+                <div class="policy-section">
+                    <h2>Information We Collect</h2>
+                    <p>We collect information that you provide directly to us when you:</p>
+                    <ul>
+                        <li>Fill out our contact form to request an estimate</li>
+                        <li>Call our phone number</li>
+                        <li>Send us an email</li>
+                        <li>Communicate with us through any other means</li>
+                    </ul>
+                    <p>This information may include your name, email address, phone number, physical address, and details about your concrete project.</p>
+                </div>
 
-<h2>How We Use Your Information</h2>
-<p>We use the information you provide to:</p>
-<ul style="margin:1rem 0 1.5rem 1.5rem;line-height:2;">
-<li>Respond to your inquiries and provide estimates</li>
-<li>Schedule and perform concrete services</li>
-<li>Send project updates and completion notices</li>
-<li>Improve our website and services</li>
-</ul>
+                <div class="policy-section">
+                    <h2>How We Use Your Information</h2>
+                    <p>We use the information we collect to:</p>
+                    <ul>
+                        <li>Respond to your inquiries and provide estimates</li>
+                        <li>Schedule and perform concrete services</li>
+                        <li>Communicate with you about your project</li>
+                        <li>Send service-related communications</li>
+                        <li>Improve our website and services</li>
+                    </ul>
+                </div>
 
-<h2>Information Sharing</h2>
-<p>We do not sell, trade, or share your personal information with third parties for marketing purposes. We may share information with service providers who assist in operating our business (e.g., payment processing), but only as necessary to provide our services.</p>
+                <div class="policy-section">
+                    <h2>Information Sharing</h2>
+                    <p><strong>We do not sell, trade, or rent your personal information to third parties.</strong> We may share your information only in the following circumstances:</p>
+                    <ul>
+                        <li>With your explicit consent</li>
+                        <li>With service providers who assist in our operations (such as email delivery services), under confidentiality agreements</li>
+                        <li>When required by law or to protect our rights and safety</li>
+                    </ul>
+                </div>
 
-<h2>Data Security</h2>
-<p>We implement reasonable security measures to protect your personal information from unauthorized access, alteration, or disclosure. However, no method of electronic transmission or storage is 100% secure.</p>
+                <div class="policy-section">
+                    <h2>Cookies</h2>
+                    <p>Our website may use cookies to enhance your browsing experience. Cookies are small files stored on your device that help us understand how you use our site. You can choose to disable cookies through your browser settings, though this may limit your ability to use certain features of our website.</p>
+                </div>
 
-<h2>Cookies</h2>
-<p>Our website may use cookies to improve your browsing experience and analyze site traffic. You can disable cookies in your browser settings, though some site features may not function properly without them.</p>
+                <div class="policy-section">
+                    <h2>Third-Party Services</h2>
+                    <p>Our website may contain links to third-party websites or use third-party services (such as Google Analytics for website analytics). We are not responsible for the privacy practices of these external sites and services. We encourage you to review their privacy policies.</p>
+                </div>
 
-<h2>Your Rights</h2>
-<p>You may request access to, correction of, or deletion of your personal information at any time by contacting us at <a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a> or calling <a href="tel:+12085550147">(208) 555-0147</a>.</p>
+                <div class="policy-section">
+                    <h2>Contact Form Data</h2>
+                    <p>When you submit our contact form, your information is sent to us via email and may be stored in our email system and customer relationship management tools. We retain this information for as long as necessary to provide you with services and respond to inquiries, typically up to 3 years for potential customers and 7 years for completed projects (for warranty and record-keeping purposes).</p>
+                </div>
 
-<h2>Changes to This Policy</h2>
-<p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated revision date.</p>
+                <div class="policy-section">
+                    <h2>Data Security</h2>
+                    <p>We take reasonable measures to protect your personal information from unauthorized access, disclosure, or destruction. However, no method of transmission over the internet or electronic storage is 100% secure. We cannot guarantee absolute security of your information.</p>
+                </div>
 
-<h2>Contact Us</h2>
-<p>If you have questions about this privacy policy, please contact us at:</p>
-<p>Meridian Concrete Solutions<br>1234 E Fairview Ave<br>Meridian, ID 83642<br><a href="tel:+12085550147">(208) 555-0147</a><br><a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a></p>
-</div>
-</section>
+                <div class="policy-section">
+                    <h2>Your Rights</h2>
+                    <p>You have the right to:</p>
+                    <ul>
+                        <li>Access the personal information we hold about you</li>
+                        <li>Request correction of inaccurate information</li>
+                        <li>Request deletion of your information (subject to legal retention requirements)</li>
+                        <li>Opt out of marketing communications</li>
+                    </ul>
+                    <p>To exercise these rights, please contact us at the information below.</p>
+                </div>
 
-<footer><div class="container"><div class="footer-bottom"><p>&copy; 2024 Meridian Concrete Solutions. All rights reserved.</p></div></div></footer>
-<script src="js/main.js"></script>
+                <div class="policy-section">
+                    <h2>Children's Privacy</h2>
+                    <p>Our services are not directed to individuals under 18. We do not knowingly collect personal information from children. If you believe we have collected information from a child, please contact us and we will delete it.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h2>Changes to This Policy</h2>
+                    <p>We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last updated" date. We encourage you to review this policy periodically.</p>
+                </div>
+
+                <div class="policy-section">
+                    <h2>Contact Us</h2>
+                    <p>If you have questions about this privacy policy or our data practices, please contact us:</p>
+                    <p>
+                        <strong>Meridian Concrete Solutions</strong><br>
+                        123 E Fairview Ave<br>
+                        Meridian, ID 83642<br>
+                        Phone: <a href="tel:+12085550147">(208) 555-0147</a><br>
+                        Email: <a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>Meridian Concrete Solutions</h3>
+                <p>123 E Fairview Ave<br>Meridian, ID 83642</p>
+                <p><a href="tel:+12085550147">(208) 555-0147</a></p>
+                <p><a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a></p>
+                <p>Mon–Sat: 7:00 AM – 6:00 PM</p>
+            </div>
+            <div class="footer-col">
+                <h3>Services</h3>
+                <a href="concrete-driveways.html">Concrete Driveways</a>
+                <a href="concrete-patios.html">Concrete Patios</a>
+                <a href="stamped-concrete.html">Stamped Concrete</a>
+                <a href="concrete-repair.html">Concrete Repair</a>
+                <a href="concrete-sidewalks.html">Sidewalks & Walkways</a>
+                <a href="foundations-slabs.html">Foundations & Slabs</a>
+                <a href="retaining-walls.html">Retaining Walls</a>
+            </div>
+            <div class="footer-col">
+                <h3>Service Areas</h3>
+                <a href="boise-id.html">Boise</a>
+                <a href="meridian-id.html">Meridian</a>
+                <a href="eagle-id.html">Eagle</a>
+                <a href="kuna-id.html">Kuna</a>
+                <a href="nampa-id.html">Nampa</a>
+                <a href="star-id.html">Star</a>
+            </div>
+            <div class="footer-col">
+                <h3>Company</h3>
+                <a href="about.html">About Us</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2024 Meridian Concrete Solutions. All rights reserved. Licensed & insured.</p>
+        </div>
+    </footer>
+
+    <div class="mobile-cta">
+        <a href="tel:+12085550147" class="btn btn-primary btn-full">Call (208) 555-0147</a>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
