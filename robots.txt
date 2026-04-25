@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://meridianidconcrete.com/sitemap.xml
+Sitemap: https://craigclaw.github.io/meridianidconcrete/sitemap.xml
