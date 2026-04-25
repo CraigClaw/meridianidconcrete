@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -67,383 +67,161 @@
       ]
     }
     </script>
-    <style>
-        :root {
-            --bg-primary: #f4f3ee;
-            --bg-secondary: #eeede6;
-            --bg-inverse: #191817;
-            --text-primary: #191817;
-            --text-secondary: #5a554e;
-            --text-muted: #8a847a;
-            --accent: #c96442;
-            --accent-hover: #b55738;
-            --border: #d8d3c8;
-            --surface: #ffffff;
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        html { font-size: 16px; scroll-behavior: smooth; }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.65;
-        }
-        h1, h2, h3, h4 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-weight: 700;
-            line-height: 1.2;
-            text-wrap: balance;
-        }
-        h1 { font-size: clamp(32px, 5vw, 52px); margin-bottom: 16px; }
-        h2 { font-size: clamp(26px, 4vw, 40px); margin-bottom: 12px; }
-        h3 { font-size: clamp(21px, 3vw, 26px); margin-bottom: 10px; }
-        p { margin-bottom: 16px; text-wrap: pretty; }
-        a { color: var(--accent); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-        .content-width { max-width: 720px; margin: 0 auto; }
-        .section { padding: 80px 0; }
-        .site-header {
-            background: var(--bg-primary);
-            border-bottom: 1px solid var(--border);
-            padding: 16px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .header-inner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 24px;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-            font-size: 20px;
-            color: var(--text-primary);
-        }
-        .logo:hover { text-decoration: none; }
-        .logo-icon { flex-shrink: 0; }
-        .main-nav {
-            display: flex;
-            align-items: center;
-            gap: 24px;
-        }
-        .main-nav a {
-            color: var(--text-primary);
-            font-weight: 500;
-            padding: 8px 0;
-            position: relative;
-        }
-        .main-nav a:not(.btn):hover { text-decoration: none; }
-        .main-nav a:not(.btn):not(.active)::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--accent);
-            transition: width 0.2s;
-        }
-        .main-nav a:not(.btn):hover::after { width: 100%; }
-        .main-nav a.active { color: var(--accent); }
-        .header-phone {
-            font-weight: 700;
-            font-size: 18px;
-            color: var(--accent);
-        }
-        .nav-toggle { display: none; background: none; border: none; font-size: 24px; cursor: pointer; }
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            border-radius: 6px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: background 0.2s;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .btn-primary {
-            background: var(--accent);
-            color: var(--bg-primary);
-        }
-        .btn-primary:hover {
-            background: var(--accent-hover);
-            text-decoration: none;
-        }
-        .btn-secondary {
-            background: transparent;
-            color: var(--text-primary);
-            border: 1px solid var(--border);
-        }
-        .btn-secondary:hover {
-            background: var(--bg-secondary);
-            text-decoration: none;
-        }
-        .hero {
-            padding: 80px 0;
-            background: var(--bg-secondary);
-        }
-        .hero .eyebrow {
-            display: block;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            margin-bottom: 12px;
-        }
-        .values-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-            margin-top: 32px;
-        }
-        .value-card {
-            background: var(--surface);
-            padding: 24px;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-        }
-        .value-card h3 { color: var(--accent); margin-bottom: 12px; }
-        .cert-list {
-            list-style: none;
-            margin: 24px 0;
-        }
-        .cert-list li {
-            padding: 12px 0;
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        .cert-list li:last-child { border-bottom: none; }
-        .cert-list svg { color: var(--accent); flex-shrink: 0; }
-        .site-footer {
-            background: var(--bg-inverse);
-            color: var(--bg-primary);
-            padding: 64px 0 24px;
-        }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 32px;
-            margin-bottom: 48px;
-        }
-        .footer-col h3 {
-            font-size: 18px;
-            margin-bottom: 16px;
-            color: var(--bg-primary);
-        }
-        .footer-col p {
-            font-size: 14px;
-            margin-bottom: 8px;
-            opacity: 0.9;
-        }
-        .footer-col a {
-            display: block;
-            color: var(--bg-primary);
-            opacity: 0.8;
-            font-size: 14px;
-            padding: 4px 0;
-        }
-        .footer-col a:hover {
-            opacity: 1;
-            text-decoration: none;
-            color: var(--accent);
-        }
-        .footer-bottom {
-            border-top: 1px solid rgba(244, 243, 238, 0.2);
-            padding-top: 24px;
-            text-align: center;
-            font-size: 14px;
-            opacity: 0.7;
-        }
-        .mobile-cta {
-            display: none;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: var(--bg-inverse);
-            padding: 16px;
-            z-index: 1000;
-        }
-        .btn-full { width: 100%; text-align: center; }
-        @media (max-width: 900px) {
-            .values-grid { grid-template-columns: 1fr; }
-            .footer-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 768px) {
-            .main-nav {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: var(--bg-primary);
-                flex-direction: column;
-                padding: 16px 24px;
-                border-bottom: 1px solid var(--border);
-            }
-            .main-nav.open { display: flex; }
-            .nav-toggle { display: block; }
-            .header-phone { display: none; }
-            .mobile-cta { display: block; }
-            .footer-grid { grid-template-columns: 1fr; }
-            body { padding-bottom: 60px; }
-        }
-    </style>
 </head>
 <body>
     <header class="site-header">
-        <div class="container header-inner">
-            <a href="index.html" class="logo" aria-label="Meridian Concrete Solutions Home">
-                <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#c96442"/><path d="M8 22h16M8 18h16M8 14h16" stroke="#f4f3ee" stroke-width="2"/></svg>
-                <span class="logo-text">Meridian Concrete</span>
+        <div class="header-inner">
+            <a href="/" class="logo" aria-label="Meridian Concrete Solutions Home">
+                <svg class="logo-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="42" height="42" rx="8" fill="#c96442"/><path d="M10 30L18 18L26 26L34 12" stroke="#f4f3ee" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34" cy="12" r="3.5" fill="#f4f3ee"/></svg>
+                <span class="logo-text">Meridian Concrete <span>Solutions</span></span>
             </a>
-            <nav class="main-nav" id="mainNav">
-                <a href="concrete-driveways.html">Driveways</a>
-                <a href="concrete-patios.html">Patios</a>
-                <a href="stamped-concrete.html">Stamped</a>
-                <a href="concrete-repair.html">Repair</a>
-                <a href="concrete-sidewalks.html">Sidewalks</a>
-                <a href="foundations-slabs.html">Foundations</a>
-                <a href="retaining-walls.html">Walls</a>
-                <a href="contact.html" class="btn btn-primary">Free Estimate</a>
-            </nav>
-            <a href="tel:+12085550147" class="header-phone">(208) 555-0147</a>
-            <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('mainNav').classList.toggle('open')">&#9776;</button>
+            <a href="tel:2085550147" class="header-phone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                (208) 555-0147
+            </a>
         </div>
     </header>
+    <nav class="main-nav-container" aria-label="Main navigation">
+        <div class="nav-inner">
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="concrete-driveways.html">Driveways</a></li>
+                <li><a href="concrete-patios.html">Patios</a></li>
+                <li><a href="stamped-concrete.html">Stamped Concrete</a></li>
+                <li><a href="concrete-repair.html">Repair</a></li>
+                <li><a href="concrete-sidewalks.html">Sidewalks</a></li>
+                <li><a href="about.html" class="nav-cta">About</a></li>
+                <li><a href="contact.html" class="nav-cta">Get Quote</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <main>
-        <section class="hero">
-            <div class="container content-width">
-                <span class="eyebrow">Our Story</span>
-                <h1>About Meridian Concrete Solutions</h1>
-                <p class="lead">We're not just another concrete contractor — we're your neighbors. Since 2010, we've been building driveways, patios, and foundations across the Treasure Valley with the same care we'd give our own properties.</p>
+        <section class="hero" style="padding: 7rem 0 4rem;">
+            <div class="hero-inner" style="grid-template-columns: 1fr;">
+                <div class="hero-content" style="max-width: 100%; text-align: center;">
+                    <p class="hero-eyebrow">Our Story</p>
+                    <h1>About Meridian Concrete Solutions</h1>
+                    <p class="lead">We're not just another concrete contractor — we're your neighbors. Since 2010, we've been building driveways, patios, and foundations across the Treasure Valley with the same care we'd give our own properties.</p>
+                </div>
             </div>
         </section>
 
         <section class="section">
-            <div class="container content-width">
-                <h2>Idaho Roots, Local Expertise</h2>
-                <p>Meridian Concrete Solutions was founded in 2010 by a team of concrete professionals who grew up in Idaho's Treasure Valley. We understand this region's unique challenges — from the expansive clay soils in south Meridian to the rocky terrain in Eagle's foothills, from brutal freeze-thaw cycles that crack poorly installed concrete to the intense summer sun that fades inferior sealers.</p>
-                <p>We've poured concrete in every neighborhood from Tuscany Village to Promontory, from downtown Boise's historic districts to new construction in Star. That local knowledge isn't something you can learn from a manual — it comes from years of working in these specific conditions, learning what works and what doesn't.</p>
+            <div class="container">
+                <div class="content-width">
+                    <h2 class="reveal">Idaho Roots, Local Expertise</h2>
+                    <p class="reveal">Meridian Concrete Solutions was founded in 2010 by a team of concrete professionals who grew up in Idaho's Treasure Valley. We understand this region's unique challenges — from the expansive clay soils in south Meridian to the rocky terrain in Eagle's foothills, from brutal freeze-thaw cycles that crack poorly installed concrete to the intense summer sun that fades inferior sealers.</p>
+                    <p class="reveal">We've poured concrete in every neighborhood from Tuscany Village to Promontory, from downtown Boise's historic districts to new construction in Star. That local knowledge isn't something you can learn from a manual — it comes from years of working in these specific conditions, learning what works and what doesn't.</p>
 
-                <h2>Our Values</h2>
-                <div class="values-grid">
-                    <div class="value-card">
-                        <h3>Quality First</h3>
-                        <p>We never cut corners. Every driveway gets proper base preparation, adequate reinforcement, and the right concrete mix for Idaho's climate. Your project will last decades, not years.</p>
+                    <h2 class="reveal" style="margin-top: 48px;">Our Values</h2>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 32px;">
+                        <div class="card-surface reveal" style="padding: 28px; text-align: center;">
+                            <div style="width: 48px; height: 48px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <h3 style="color: var(--accent); margin-bottom: 12px;">Quality First</h3>
+                            <p style="margin-bottom: 0;">We never cut corners. Every driveway gets proper base preparation, adequate reinforcement, and the right concrete mix for Idaho's climate. Your project will last decades, not years.</p>
+                        </div>
+                        <div class="card-surface reveal stagger-2" style="padding: 28px; text-align: center;">
+                            <div style="width: 48px; height: 48px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </div>
+                            <h3 style="color: var(--accent); margin-bottom: 12px;">Transparency</h3>
+                            <p style="margin-bottom: 0;">No hidden fees, no surprise upcharges. Our estimates are detailed and itemized. If conditions change mid-project, we communicate before any additional costs.</p>
+                        </div>
+                        <div class="card-surface reveal stagger-3" style="padding: 28px; text-align: center;">
+                            <div style="width: 48px; height: 48px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                            </div>
+                            <h3 style="color: var(--accent); margin-bottom: 12px;">Local Commitment</h3>
+                            <p style="margin-bottom: 0;">We live here. We work here. When you hire us, you're hiring neighbors who stand behind their work and will be here if you ever need us.</p>
+                        </div>
                     </div>
-                    <div class="value-card">
-                        <h3>Transparency</h3>
-                        <p>No hidden fees, no surprise upcharges. Our estimates are detailed and itemized. If conditions change mid-project, we communicate before any additional costs.</p>
+
+                    <h2 class="reveal" style="margin-top: 48px;">Certifications &amp; Licenses</h2>
+                    <p class="reveal">We maintain all required state and local credentials, plus industry certifications that demonstrate our commitment to proper concrete installation:</p>
+                    <ul class="reveal" style="margin-top: 24px; list-style: none; padding: 0;">
+                        <li style="padding: 16px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 16px;">
+                            <svg style="color: var(--accent); flex-shrink: 0;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span><strong>Idaho Division of Building Safety</strong> — Licensed Contractor (RCE-12345)</span>
+                        </li>
+                        <li style="padding: 16px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 16px;">
+                            <svg style="color: var(--accent); flex-shrink: 0;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span><strong>General Liability Insurance</strong> — Full coverage for residential and commercial projects</span>
+                        </li>
+                        <li style="padding: 16px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 16px;">
+                            <svg style="color: var(--accent); flex-shrink: 0;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span><strong>Workers' Compensation</strong> — Protecting our crew and your property</span>
+                        </li>
+                        <li style="padding: 16px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 16px;">
+                            <svg style="color: var(--accent); flex-shrink: 0;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span><strong>ACI Concrete Flatwork Technician</strong> — American Concrete Institute certified</span>
+                        </li>
+                        <li style="padding: 16px 0; display: flex; align-items: center; gap: 16px;">
+                            <svg style="color: var(--accent); flex-shrink: 0;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span><strong>Better Business Bureau</strong> — Accredited business with A+ rating</span>
+                        </li>
+                    </ul>
+
+                    <h2 class="reveal" style="margin-top: 48px;">Our Service Area</h2>
+                    <p class="reveal">We proudly serve the entire Treasure Valley, including:</p>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 24px;">
+                        <div class="card-surface reveal" style="padding: 20px;">
+                            <p style="margin-bottom: 0;"><strong>Meridian</strong> — From Settlers to south Meridian, we know every subdivision and soil condition. <a href="meridian-id.html" style="color: var(--accent);">Learn about our Meridian services →</a></p>
+                        </div>
+                        <div class="card-surface reveal stagger-2" style="padding: 20px;">
+                            <p style="margin-bottom: 0;"><strong>Boise</strong> — Northwest Boise, southeast Boise, and everything in between. <a href="boise-id.html" style="color: var(--accent);">Boise concrete services →</a></p>
+                        </div>
+                        <div class="card-surface reveal stagger-3" style="padding: 20px;">
+                            <p style="margin-bottom: 0;"><strong>Eagle</strong> — Foothills properties, Quail Ridge, and custom estates. <a href="eagle-id.html" style="color: var(--accent);">Eagle concrete contractor →</a></p>
+                        </div>
+                        <div class="card-surface reveal stagger-4" style="padding: 20px;">
+                            <p style="margin-bottom: 0;"><strong>Kuna</strong> — Growing communities and rural properties. <a href="kuna-id.html" style="color: var(--accent);">Kuna concrete work →</a></p>
+                        </div>
+                        <div class="card-surface reveal stagger-5" style="padding: 20px;">
+                            <p style="margin-bottom: 0;"><strong>Nampa</strong> — Residential and commercial throughout the city. <a href="nampa-id.html" style="color: var(--accent);">Nampa concrete services →</a></p>
+                        </div>
+                        <div class="card-surface reveal stagger-6" style="padding: 20px;">
+                            <p style="margin-bottom: 0;"><strong>Star</strong> — New construction and established neighborhoods. <a href="star-id.html" style="color: var(--accent);">Star concrete contractor →</a></p>
+                        </div>
                     </div>
-                    <div class="value-card">
-                        <h3>Local Commitment</h3>
-                        <p>We live here. We work here. When you hire us, you're hiring neighbors who stand behind their work and will be here if you ever need us.</p>
+
+                    <div class="reveal" style="margin-top: 48px; padding: 32px; background: var(--bg-secondary); border-radius: 8px; text-align: center;">
+                        <h2>Ready to Work Together?</h2>
+                        <p>We're currently booking estimates 2–3 weeks out. Whether you need a simple driveway replacement or a complex stamped concrete patio, we'll give you an honest assessment, fair pricing, and quality workmanship.</p>
+                        <div style="margin-top: 24px;">
+                            <a href="tel:2085550147" class="btn btn-primary">Call (208) 555-0147</a>
+                            <a href="contact.html" class="btn btn-secondary" style="margin-left: 12px;">Request Online Estimate</a>
+                        </div>
                     </div>
-                </div>
-
-                <h2 style="margin-top: 48px;">Certifications & Licenses</h2>
-                <p>We maintain all required state and local credentials, plus industry certifications that demonstrate our commitment to proper concrete installation:</p>
-                <ul class="cert-list">
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        <span><strong>Idaho Division of Building Safety</strong> — Licensed Contractor (RCE-12345)</span>
-                    </li>
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        <span><strong>General Liability Insurance</strong> — Full coverage for residential and commercial projects</span>
-                    </li>
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        <span><strong>Workers' Compensation</strong> — Protecting our crew and your property</span>
-                    </li>
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        <span><strong>ACI Concrete Flatwork Technician</strong> — American Concrete Institute certified</span>
-                    </li>
-                    <li>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        <span><strong>Better Business Bureau</strong> — Accredited business with A+ rating</span>
-                    </li>
-                </ul>
-
-                <h2 style="margin-top: 48px;">Our Service Area</h2>
-                <p>We proudly serve the entire Treasure Valley, including:</p>
-                <p><strong>Meridian</strong> — From Settlers to south Meridian, we know every subdivision and soil condition. <a href="meridian-id.html">Learn about our Meridian services →</a></p>
-                <p><strong>Boise</strong> — Northwest Boise, southeast Boise, and everything in between. <a href="boise-id.html">Boise concrete services →</a></p>
-                <p><strong>Eagle</strong> — Foothills properties, Quail Ridge, and custom estates. <a href="eagle-id.html">Eagle concrete contractor →</a></p>
-                <p><strong>Kuna</strong> — Growing communities and rural properties. <a href="kuna-id.html">Kuna concrete work →</a></p>
-                <p><strong>Nampa</strong> — Residential and commercial throughout the city. <a href="nampa-id.html">Nampa concrete services →</a></p>
-                <p><strong>Star</strong> — New construction and established neighborhoods. <a href="star-id.html">Star concrete contractor →</a></p>
-
-                <h2 style="margin-top: 48px;">Ready to Work Together?</h2>
-                <p>We're currently booking estimates 2-3 weeks out. Whether you need a simple driveway replacement or a complex stamped concrete patio, we'll give you an honest assessment, fair pricing, and quality workmanship.</p>
-                <div style="margin-top: 24px;">
-                    <a href="tel:+12085550147" class="btn btn-primary">Call (208) 555-0147</a>
-                    <a href="contact.html" class="btn btn-secondary" style="margin-left: 12px;">Request Online Estimate</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <h3>Meridian Concrete Solutions</h3>
-                <p>123 E Fairview Ave<br>Meridian, ID 83642</p>
-                <p><a href="tel:+12085550147">(208) 555-0147</a></p>
-                <p><a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a></p>
-                <p>Mon–Sat: 7:00 AM – 6:00 PM</p>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/" class="logo" style="margin-bottom: 1.25rem;">
+                    <svg class="logo-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="42" height="42" rx="8" fill="#c96442"/><path d="M10 30L18 18L26 26L34 12" stroke="#f4f3ee" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34" cy="12" r="3.5" fill="#f4f3ee"/></svg>
+                    <span class="logo-text" style="color: #f4f3ee;">Meridian Concrete <span style="color: rgba(244, 243, 238, 0.65);">Solutions</span></span>
+                </a>
+                <p>Your trusted concrete contractor serving Meridian and the Treasure Valley since 2010.</p>
+                <div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>123 E Fairview Ave<br>Meridian, ID 83642</span></div>
+                <div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:2085550147">(208) 555-0147</a></div>
             </div>
-            <div class="footer-col">
-                <h3>Services</h3>
-                <a href="concrete-driveways.html">Concrete Driveways</a>
-                <a href="concrete-patios.html">Concrete Patios</a>
-                <a href="stamped-concrete.html">Stamped Concrete</a>
-                <a href="concrete-repair.html">Concrete Repair</a>
-                <a href="concrete-sidewalks.html">Sidewalks & Walkways</a>
-                <a href="foundations-slabs.html">Foundations & Slabs</a>
-                <a href="retaining-walls.html">Retaining Walls</a>
-            </div>
-            <div class="footer-col">
-                <h3>Service Areas</h3>
-                <a href="boise-id.html">Boise</a>
-                <a href="meridian-id.html">Meridian</a>
-                <a href="eagle-id.html">Eagle</a>
-                <a href="kuna-id.html">Kuna</a>
-                <a href="nampa-id.html">Nampa</a>
-                <a href="star-id.html">Star</a>
-            </div>
-            <div class="footer-col">
-                <h3>Company</h3>
-                <a href="about.html">About Us</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Service</a>
-            </div>
+            <div class="footer-col"><h4>Services</h4><ul><li><a href="concrete-driveways.html">Concrete Driveways</a></li><li><a href="concrete-patios.html">Concrete Patios</a></li><li><a href="stamped-concrete.html">Stamped Concrete</a></li><li><a href="concrete-repair.html">Concrete Repair</a></li><li><a href="concrete-sidewalks.html">Sidewalks &amp; Walkways</a></li><li><a href="foundations-slabs.html">Foundations &amp; Slabs</a></li><li><a href="retaining-walls.html">Retaining Walls</a></li></ul></div>
+            <div class="footer-col"><h4>Service Areas</h4><ul><li><a href="meridian-id.html">Meridian</a></li><li><a href="boise-id.html">Boise</a></li><li><a href="eagle-id.html">Eagle</a></li><li><a href="kuna-id.html">Kuna</a></li><li><a href="nampa-id.html">Nampa</a></li><li><a href="star-id.html">Star</a></li></ul></div>
+            <div class="footer-col"><h4>Contact</h4><div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a></div><div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Mon-Sat: 7:00 AM - 6:00 PM</span></div></div>
         </div>
-        <div class="container footer-bottom">
-            <p>&copy; 2024 Meridian Concrete Solutions. All rights reserved. Licensed & insured.</p>
-        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Meridian Concrete Solutions. All rights reserved.</p><p><a href="privacy.html">Privacy Policy</a><span>|</span><a href="terms.html">Terms of Service</a></p></div>
     </footer>
 
-    <div class="mobile-cta">
-        <a href="tel:+12085550147" class="btn btn-primary btn-full">Call (208) 555-0147</a>
-    </div>
-
+    <div class="mobile-cta"><a href="tel:2085550147"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (208) 555-0147</a></div>
     <script src="js/main.js"></script>
 </body>
 </html>

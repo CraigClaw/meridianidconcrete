@@ -13,6 +13,9 @@
     <meta property="og:url" content="https://meridianidconcrete.com/concrete-repair.html">
     <meta property="og:site_name" content="Meridian Concrete Solutions">
     <meta name="twitter:card" content="summary">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script type="application/ld+json">
     {
@@ -48,137 +51,148 @@
 </head>
 <body>
     <header class="site-header">
-        <div class="container header-inner">
-            <a href="index.html" class="logo" aria-label="Meridian Concrete Solutions Home">
-                <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#c96442"/><path d="M8 22h16M8 18h16M8 14h16" stroke="#f4f3ee" stroke-width="2"/></svg>
-                <span class="logo-text">Meridian Concrete</span>
+        <div class="header-inner">
+            <a href="/" class="logo" aria-label="Meridian Concrete Solutions Home">
+                <svg class="logo-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect width="42" height="42" rx="8" fill="#c96442"/>
+                    <path d="M10 30L18 18L26 26L34 12" stroke="#f4f3ee" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="34" cy="12" r="3.5" fill="#f4f3ee"/>
+                </svg>
+                <span class="logo-text">Meridian Concrete <span>Solutions</span></span>
             </a>
-            <nav class="main-nav" id="mainNav">
-                <a href="concrete-driveways.html">Driveways</a>
-                <a href="concrete-patios.html">Patios</a>
-                <a href="concrete-repair.html" class="active">Repair</a>
-                <a href="concrete-sidewalks.html">Sidewalks</a>
-                <a href="foundations-slabs.html">Foundations</a>
-                <a href="retaining-walls.html">Walls</a>
-                <a href="contact.html" class="btn btn-primary">Free Estimate</a>
-            </nav>
-            <a href="tel:+12085550147" class="header-phone">(208) 555-0147</a>
-            <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('mainNav').classList.toggle('open')">&#9776;</button>
+            <a href="tel:2085550147" class="header-phone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                (208) 555-0147
+            </a>
         </div>
     </header>
+    <nav class="main-nav-container" aria-label="Main navigation">
+        <div class="nav-inner">
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="concrete-driveways.html">Driveways</a></li>
+                <li><a href="concrete-patios.html">Patios</a></li>
+                <li><a href="stamped-concrete.html">Stamped Concrete</a></li>
+                <li><a href="concrete-repair.html" class="active">Repair</a></li>
+                <li><a href="concrete-sidewalks.html">Sidewalks</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="nav-cta">Get Quote</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <main>
         <section class="hero">
-            <div class="container">
-                <span class="eyebrow">Concrete Repair Specialist</span>
-                <h1>Concrete Repair in Treasure Valley, ID</h1>
-                <p class="lead">Idaho's harsh freeze-thaw cycles take a toll on concrete surfaces. From hairline cracks in driveways to sunken slabs and spalling damage, we restore your concrete to like-new condition. Serving Meridian, Boise, Eagle, and the entire Treasure Valley with honest repair assessments and lasting solutions.</p>
-                <div class="hero-ctas">
-                    <a href="tel:+12085550147" class="btn btn-primary">Call (208) 555-0147</a>
-                    <a href="contact.html" class="btn btn-secondary">Request Free Assessment</a>
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">Concrete Repair Specialist</p>
+                    <h1>Concrete Repair in Treasure Valley, ID</h1>
+                    <p class="lead">Idaho's harsh freeze-thaw cycles take a toll on concrete surfaces. From hairline cracks in driveways to sunken slabs and spalling damage, we restore your concrete to like-new condition. Serving Meridian, Boise, Eagle, and the entire Treasure Valley with honest repair assessments and lasting solutions.</p>
+                    <div class="hero-ctas">
+                        <a href="tel:2085550147" class="btn btn-primary btn-lg">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            Call (208) 555-0147
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary btn-lg">Request Free Assessment</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-concrete-driveway.jpg" alt="Concrete service in Meridian Idaho" width="600" height="450" loading="eager">
                 </div>
             </div>
         </section>
 
         <section class="section">
-            <div class="container content-width">
-                <h2>Understanding Freeze-Thaw Damage in Idaho Concrete</h2>
-                <p>The Treasure Valley experiences over 40 freeze-thaw cycles annually, and this repeated expansion and contraction is the primary cause of concrete deterioration in our region. When water seeps into microscopic pores and cracks in your concrete, it freezes and expands by approximately 9 percent during cold Idaho nights. This expansion creates internal pressure that widens existing cracks and creates new ones. When the ice thaws during daytime warming, the water recedes, leaving larger voids for more water to enter. Over successive winters, this cycle causes progressive damage that can transform minor surface cracks into structural problems.</p>
-                <p>Meridian's clay-heavy soil compounds this issue. Clay expands when wet and shrinks during dry periods, causing the ground beneath your concrete to shift seasonally. This movement creates stress points where cracks initiate, particularly along driveway edges, sidewalk corners, and slab perimeters. Homeowners in older Meridian neighborhoods near Downtown or in established areas like Hillcrest often notice this damage first, as their concrete has endured decades of these cycles.</p>
-                <p>Proper repair requires understanding not just the visible damage, but the underlying causes. A crack filled without addressing drainage issues or soil movement will simply reopen. Our repair approach starts with diagnosis — we assess whether the damage is cosmetic or structural, identify moisture sources, and evaluate soil conditions before recommending the appropriate solution.</p>
+            <div class="container">
+                <div class="content-width">
+                    <h2>Understanding Freeze-Thaw Damage in Idaho Concrete</h2>
+                    <p>The Treasure Valley experiences over 40 freeze-thaw cycles annually, and this repeated expansion and contraction is the primary cause of concrete deterioration in our region. When water seeps into microscopic pores and cracks in your concrete, it freezes and expands by approximately 9 percent during cold Idaho nights. This expansion creates internal pressure that widens existing cracks and creates new ones. When the ice thaws during daytime warming, the water recedes, leaving larger voids for more water to enter. Over successive winters, this cycle causes progressive damage that can transform minor surface cracks into structural problems.</p>
+                    <p>Meridian's clay-heavy soil compounds this issue. Clay expands when wet and shrinks during dry periods, causing the ground beneath your concrete to shift seasonally. This movement creates stress points where cracks initiate, particularly along driveway edges, sidewalk corners, and slab perimeters. Homeowners in older Meridian neighborhoods near Downtown or in established areas like Hillcrest often notice this damage first, as their concrete has endured decades of these cycles.</p>
+                    <p>Proper repair requires understanding not just the visible damage, but the underlying causes. A crack filled without addressing drainage issues or soil movement will simply reopen. Our repair approach starts with diagnosis — we assess whether the damage is cosmetic or structural, identify moisture sources, and evaluate soil conditions before recommending the appropriate solution.</p>
 
-                <h2>Our Concrete Repair Services</h2>
+                    <h2>Our Concrete Repair Services</h2>
 
-                <h3>Crack Repair and Sealing</h3>
-                <p>Not all cracks require the same treatment. Hairline cracks under 1/8 inch wide are typically cosmetic and can be sealed with flexible epoxy or polyurethane fillers that move with the concrete. These prevent water infiltration while remaining invisible after curing. Wider cracks between 1/8 and 1/2 inch require routing and filling with polymer-modified concrete patching compounds that bond chemically to the existing surface. Cracks exceeding 1/2 inch often indicate structural movement and may need carbon fiber reinforcement or partial slab replacement.</p>
-                <p>We use industry-leading products from Euclid Chemical and Sika that are specifically formulated for Idaho's climate. These materials remain flexible down to -20°F and resist UV degradation during our intense summer sun. Every crack repair includes proper surface preparation — cleaning, drying, and priming — to ensure the filler bonds permanently rather than simply sitting on the surface.</p>
+                    <h3>Crack Repair and Sealing</h3>
+                    <p>Not all cracks require the same treatment. Hairline cracks under 1/8 inch wide are typically cosmetic and can be sealed with flexible epoxy or polyurethane fillers that move with the concrete. These prevent water infiltration while remaining invisible after curing. Wider cracks between 1/8 and 1/2 inch require routing and filling with polymer-modified concrete patching compounds that bond chemically to the existing surface. Cracks exceeding 1/2 inch often indicate structural movement and may need carbon fiber reinforcement or partial slab replacement.</p>
+                    <p>We use industry-leading products from Euclid Chemical and Sika that are specifically formulated for Idaho's climate. These materials remain flexible down to -20°F and resist UV degradation during our intense summer sun. Every crack repair includes proper surface preparation — cleaning, drying, and priming — to ensure the filler bonds permanently rather than simply sitting on the surface.</p>
 
-                <h3>Concrete Resurfacing</h3>
-                <p>When your concrete surface shows widespread cosmetic damage — discoloration, minor spalling, surface pitting, or network cracking — resurfacing offers a cost-effective alternative to complete replacement. Our resurfacing process applies a 1/8 to 1/4 inch layer of polymer-modified concrete overlay that bonds to your existing slab. This creates a fresh, uniform surface that can be textured, colored, or stamped to match your aesthetic preferences.</p>
-                <p>Resurfacing works well for driveways in Meridian subdivisions where the structural slab remains sound but the surface has deteriorated from weather exposure and deicing salts. The process includes thorough cleaning, etching or grinding for mechanical bond, application of a bonding agent, then the overlay material finished to your specification. Resurfaced concrete typically lasts 10-15 years before needing attention, at roughly one-third the cost of full replacement.</p>
+                    <h3>Concrete Resurfacing</h3>
+                    <p>When your concrete surface shows widespread cosmetic damage — discoloration, minor spalling, surface pitting, or network cracking — resurfacing offers a cost-effective alternative to complete replacement. Our resurfacing process applies a 1/8 to 1/4 inch layer of polymer-modified concrete overlay that bonds to your existing slab. This creates a fresh, uniform surface that can be textured, colored, or stamped to match your aesthetic preferences.</p>
+                    <p>Resurfacing works well for driveways in Meridian subdivisions where the structural slab remains sound but the surface has deteriorated from weather exposure and deicing salts. The process includes thorough cleaning, etching or grinding for mechanical bond, application of a bonding agent, then the overlay material finished to your specification. Resurfaced concrete typically lasts 10-15 years before needing attention, at roughly one-third the cost of full replacement.</p>
 
-                <h3>Mudjacking and Slab Lifting</h3>
-                <p>Sunken or uneven concrete slabs present both cosmetic and safety concerns. When soil beneath your driveway, sidewalk, or patio settles or erodes, the concrete loses support and sinks. This creates trip hazards on walkways, drainage problems on driveways, and unsightly gaps where slabs meet. Mudjacking — also called slab jacking or pressure grouting — lifts sunken concrete back to its original position without replacement.</p>
-                <p>The process involves drilling small holes (typically 2 inches diameter) through the sunken slab, then pumping a slurry mixture of cement, sand, and water beneath the concrete under pressure. This fills voids in the soil and gradually lifts the slab to level. We use precision leveling equipment to ensure accurate elevation matching with adjacent slabs. The holes are patched with matching concrete, leaving minimal evidence of the repair. Mudjacking costs 50-70 percent less than slab replacement and can be completed in a single day.</p>
-                <p>Polyurethane foam injection is a modern alternative to traditional mudjacking. Expanding foam is injected through smaller holes (5/8 inch), creating less mess and providing longer-lasting results. The foam doesn't absorb water or break down over time like traditional mudjacking slurry. We offer both methods and recommend based on your specific situation and budget.</p>
+                    <h3>Mudjacking and Slab Lifting</h3>
+                    <p>Sunken or uneven concrete slabs present both cosmetic and safety concerns. When soil beneath your driveway, sidewalk, or patio settles or erodes, the concrete loses support and sinks. This creates trip hazards on walkways, drainage problems on driveways, and unsightly gaps where slabs meet. Mudjacking — also called slab jacking or pressure grouting — lifts sunken concrete back to its original position without replacement.</p>
+                    <p>The process involves drilling small holes (typically 2 inches diameter) through the sunken slab, then pumping a slurry mixture of cement, sand, and water beneath the concrete under pressure. This fills voids in the soil and gradually lifts the slab to level. We use precision leveling equipment to ensure accurate elevation matching with adjacent slabs. The holes are patched with matching concrete, leaving minimal evidence of the repair. Mudjacking costs 50-70 percent less than slab replacement and can be completed in a single day.</p>
+                    <p>Polyurethane foam injection is a modern alternative to traditional mudjacking. Expanding foam is injected through smaller holes (5/8 inch), creating less mess and providing longer-lasting results. The foam doesn't absorb water or break down over time like traditional mudjacking slurry. We offer both methods and recommend based on your specific situation and budget.</p>
 
-                <h3>Spalling and Surface Damage Repair</h3>
-                <p>Spalling — the flaking or peeling of concrete surface layers — occurs when moisture penetrates the surface, freezes, and causes the top layer to delaminate. This is common on driveways treated with deicing salts and on older concrete that wasn't properly sealed. We repair spalling by removing all loose material, cleaning the exposed aggregate, and applying a bonding agent followed by a polymer-modified patching compound feathered to match the surrounding surface.</p>
-
-                <h2>Repair vs. Replace: Making the Right Decision</h2>
-                <p>One of the most common questions we receive is whether damaged concrete should be repaired or replaced. The answer depends on several factors, and honest assessment matters more than selling a larger job. Here's our framework for evaluating repair versus replacement:</p>
-                <p><strong>Repair is appropriate when:</strong> The structural integrity of the slab remains intact. Cracks are stable (not actively widening). Damage is cosmetic or limited to surface layers. The slab is properly positioned and draining. Less than 30 percent of the surface shows deterioration. Budget constraints favor a temporary or mid-term solution.</p>
-                <p><strong>Replacement is necessary when:</strong> The slab has multiple intersecting cracks forming loose pieces (alligator cracking). The concrete has heaved or sunk more than 2 inches and mudjacking isn't feasible. Reinforcing steel is exposed and corroding. The slab is too thin (under 3 inches) for intended use. Previous repairs have repeatedly failed. You're changing the layout or expanding the paved area.</p>
-                <p>We provide transparent recommendations. If repair makes sense, we'll say so — even if replacement would generate more revenue. Our goal is solving your concrete problems efficiently, not maximizing our invoice. Many contractors push replacement because it's more profitable. We'd rather earn your trust with honest assessments and appropriate solutions.</p>
-
-                <h2>Serving the Entire Treasure Valley</h2>
-                <p>Our concrete repair crews work throughout the greater Boise area, responding to service calls in <a href="meridian-id.html">Meridian</a>, <a href="boise-id.html">Boise</a>, <a href="eagle-id.html">Eagle</a>, <a href="kuna-id.html">Kuna</a>, <a href="nampa-id.html">Nampa</a>, and <a href="star-id.html">Star</a>. We understand the specific soil conditions and weather patterns affecting concrete in each area. South Meridian's expansive clay requires different repair approaches than the sandy soils near the Boise River in west Boise. Kuna's agricultural surroundings mean more frost heave concerns. Star's rapid development includes both new construction repairs and aging concrete from the town's older properties.</p>
-                <p>We also service <a href="concrete-driveways.html">concrete driveways</a>, <a href="concrete-patios.html">concrete patios</a>, <a href="concrete-sidewalks.html">sidewalks and walkways</a>, <a href="foundations-slabs.html">foundations and slabs</a>, <a href="retaining-walls.html">retaining walls</a>, and <a href="stamped-concrete.html">stamped concrete</a> throughout the region.</p>
-
-                <h2>Free Repair Assessments</h2>
-                <p>Every concrete repair project begins with an on-site assessment. We examine the damage, discuss your concerns, explain the underlying causes, and present your options with clear pricing. No pressure, no upselling — just honest professional guidance. Most assessments are completed within 30 minutes, and we provide written estimates the same day.</p>
-                <p>Call us at (208) 555-0147 or request your free assessment online. Whether you have a single crack in your driveway or extensive damage across multiple surfaces, we'll help you determine the most cost-effective path forward.</p>
+                    <h3>Spalling and Surface Damage Repair</h3>
+                    <p>Spalling — the flaking or peeling of concrete surface layers — occurs when moisture penetrates the surface, freezes, and causes the top layer to delaminate. This is common on driveways treated with deicing salts and on older concrete that wasn't properly sealed. We repair spalling by removing all loose material, cleaning the exposed aggregate, and applying a bonding agent followed by a polymer-modified patching compound feathered to match the surrounding surface.</p>
+                </div>
             </div>
         </section>
 
-        <section class="section section-inverse">
-            <div class="container text-center">
+        <section class="section section-alt">
+            <div class="container">
+                <div class="content-width">
+                    <h2>Repair vs. Replace: Making the Right Decision</h2>
+                    <p>One of the most common questions we receive is whether damaged concrete should be repaired or replaced. The answer depends on several factors, and honest assessment matters more than selling a larger job. Here's our framework for evaluating repair versus replacement:</p>
+                    <p><strong>Repair is appropriate when:</strong> The structural integrity of the slab remains intact. Cracks are stable (not actively widening). Damage is cosmetic or limited to surface layers. The slab is properly positioned and draining. Less than 30 percent of the surface shows deterioration. Budget constraints favor a temporary or mid-term solution.</p>
+                    <p><strong>Replacement is necessary when:</strong> The slab has multiple intersecting cracks forming loose pieces (alligator cracking). The concrete has heaved or sunk more than 2 inches and mudjacking isn't feasible. Reinforcing steel is exposed and corroding. The slab is too thin (under 3 inches) for intended use. Previous repairs have repeatedly failed. You're changing the layout or expanding the paved area.</p>
+                    <p>We provide transparent recommendations. If repair makes sense, we'll say so — even if replacement would generate more revenue. Our goal is solving your concrete problems efficiently, not maximizing our invoice. Many contractors push replacement because it's more profitable. We'd rather earn your trust with honest assessments and appropriate solutions.</p>
+
+                    <h2>Serving the Entire Treasure Valley</h2>
+                    <p>Our concrete repair crews work throughout the greater Boise area, responding to service calls in <a href="meridian-id.html">Meridian</a>, <a href="boise-id.html">Boise</a>, <a href="eagle-id.html">Eagle</a>, <a href="kuna-id.html">Kuna</a>, <a href="nampa-id.html">Nampa</a>, and <a href="star-id.html">Star</a>. We understand the specific soil conditions and weather patterns affecting concrete in each area. South Meridian's expansive clay requires different repair approaches than the sandy soils near the Boise River in west Boise. Kuna's agricultural surroundings mean more frost heave concerns. Star's rapid development includes both new construction repairs and aging concrete from the town's older properties.</p>
+                    <p>We also service <a href="concrete-driveways.html">concrete driveways</a>, <a href="concrete-patios.html">concrete patios</a>, <a href="concrete-sidewalks.html">sidewalks and walkways</a>, <a href="foundations-slabs.html">foundations and slabs</a>, <a href="retaining-walls.html">retaining walls</a>, and <a href="stamped-concrete.html">stamped concrete</a> throughout the region.</p>
+
+                    <h2>Free Repair Assessments</h2>
+                    <p>Every concrete repair project begins with an on-site assessment. We examine the damage, discuss your concerns, explain the underlying causes, and present your options with clear pricing. No pressure, no upselling — just honest professional guidance. Most assessments are completed within 30 minutes, and we provide written estimates the same day.</p>
+                    <p>Call us at (208) 555-0147 or request your free assessment online. Whether you have a single crack in your driveway or extensive damage across multiple surfaces, we'll help you determine the most cost-effective path forward.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="container">
                 <h2>Need Concrete Repair in the Treasure Valley?</h2>
                 <p>Expert diagnosis, honest recommendations, and repairs that last. Free on-site assessments.</p>
-                <div class="hero-ctas">
-                    <a href="tel:+12085550147" class="btn btn-primary">(208) 555-0147</a>
-                    <a href="contact.html" class="btn btn-secondary">Request Assessment</a>
+                <div class="hero-ctas" style="justify-content: center;">
+                    <a href="tel:2085550147" class="btn btn-inverse btn-lg">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        (208) 555-0147
+                    </a>
+                    <a href="contact.html" class="btn btn-ghost btn-lg">Request Assessment Online</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <h3>Meridian Concrete Solutions</h3>
-                <p>123 E Fairview Ave<br>Meridian, ID 83642</p>
-                <p><a href="tel:+12085550147">(208) 555-0147</a></p>
-                <p><a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a></p>
-                <p>Mon–Sat: 7:00 AM – 6:00 PM</p>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/" class="logo" style="margin-bottom: 1.25rem;">
+                    <svg class="logo-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="42" height="42" rx="8" fill="#c96442"/><path d="M10 30L18 18L26 26L34 12" stroke="#f4f3ee" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34" cy="12" r="3.5" fill="#f4f3ee"/></svg>
+                    <span class="logo-text" style="color: #f4f3ee;">Meridian Concrete <span style="color: rgba(244, 243, 238, 0.65);">Solutions</span></span>
+                </a>
+                <p>Your trusted concrete contractor serving Meridian and the Treasure Valley since 2010.</p>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>123 E Fairview Ave<br>Meridian, ID 83642</span>
+                </div>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <a href="tel:2085550147">(208) 555-0147</a>
+                </div>
             </div>
-            <div class="footer-col">
-                <h3>Services</h3>
-                <a href="concrete-driveways.html">Concrete Driveways</a>
-                <a href="concrete-patios.html">Concrete Patios</a>
-                <a href="stamped-concrete.html">Stamped Concrete</a>
-                <a href="concrete-repair.html">Concrete Repair</a>
-                <a href="concrete-sidewalks.html">Sidewalks & Walkways</a>
-                <a href="foundations-slabs.html">Foundations & Slabs</a>
-                <a href="retaining-walls.html">Retaining Walls</a>
-            </div>
-            <div class="footer-col">
-                <h3>Service Areas</h3>
-                <a href="boise-id.html">Boise</a>
-                <a href="meridian-id.html">Meridian</a>
-                <a href="eagle-id.html">Eagle</a>
-                <a href="kuna-id.html">Kuna</a>
-                <a href="nampa-id.html">Nampa</a>
-                <a href="star-id.html">Star</a>
-            </div>
-            <div class="footer-col">
-                <h3>Company</h3>
-                <a href="about.html">About Us</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Service</a>
-            </div>
+            <div class="footer-col"><h4>Services</h4><ul><li><a href="concrete-driveways.html">Concrete Driveways</a></li><li><a href="concrete-patios.html">Concrete Patios</a></li><li><a href="stamped-concrete.html">Stamped Concrete</a></li><li><a href="concrete-repair.html">Concrete Repair</a></li><li><a href="concrete-sidewalks.html">Sidewalks &amp; Walkways</a></li><li><a href="foundations-slabs.html">Foundations &amp; Slabs</a></li><li><a href="retaining-walls.html">Retaining Walls</a></li></ul></div>
+            <div class="footer-col"><h4>Service Areas</h4><ul><li><a href="meridian-id.html">Meridian</a></li><li><a href="boise-id.html">Boise</a></li><li><a href="eagle-id.html">Eagle</a></li><li><a href="kuna-id.html">Kuna</a></li><li><a href="nampa-id.html">Nampa</a></li><li><a href="star-id.html">Star</a></li></ul></div>
+            <div class="footer-col"><h4>Contact</h4><div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a></div><div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Mon-Sat: 7:00 AM - 6:00 PM</span></div></div>
         </div>
-        <div class="container footer-bottom">
-            <p>&copy; 2024 Meridian Concrete Solutions. All rights reserved. Licensed & insured.</p>
-        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Meridian Concrete Solutions. All rights reserved.</p><p><a href="privacy.html">Privacy Policy</a><span>|</span><a href="terms.html">Terms of Service</a></p></div>
     </footer>
-
-    <div class="mobile-cta">
-        <a href="tel:+12085550147" class="btn btn-primary btn-full">Call (208) 555-0147</a>
-    </div>
-
+    <div class="mobile-cta"><a href="tel:2085550147"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (208) 555-0147</a></div>
     <script src="js/main.js"></script>
 </body>
 </html>

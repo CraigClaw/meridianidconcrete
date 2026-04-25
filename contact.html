@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -53,475 +53,183 @@
       ]
     }
     </script>
-    <style>
-        :root {
-            --bg-primary: #f4f3ee;
-            --bg-secondary: #eeede6;
-            --bg-inverse: #191817;
-            --text-primary: #191817;
-            --text-secondary: #5a554e;
-            --text-muted: #8a847a;
-            --accent: #c96442;
-            --accent-hover: #b55738;
-            --border: #d8d3c8;
-            --surface: #ffffff;
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        html { font-size: 16px; scroll-behavior: smooth; }
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.65;
-        }
-        h1, h2, h3, h4 {
-            font-family: 'Playfair Display', Georgia, serif;
-            font-weight: 700;
-            line-height: 1.2;
-            text-wrap: balance;
-        }
-        h1 { font-size: clamp(32px, 5vw, 52px); margin-bottom: 16px; }
-        h2 { font-size: clamp(26px, 4vw, 40px); margin-bottom: 12px; }
-        h3 { font-size: clamp(21px, 3vw, 26px); margin-bottom: 10px; }
-        p { margin-bottom: 16px; text-wrap: pretty; }
-        a { color: var(--accent); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-        .content-width { max-width: 680px; margin: 0 auto; }
-        .section { padding: 80px 0; }
-        .site-header {
-            background: var(--bg-primary);
-            border-bottom: 1px solid var(--border);
-            padding: 16px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .header-inner {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 24px;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-            font-size: 20px;
-            color: var(--text-primary);
-        }
-        .logo:hover { text-decoration: none; }
-        .logo-icon { flex-shrink: 0; }
-        .main-nav {
-            display: flex;
-            align-items: center;
-            gap: 24px;
-        }
-        .main-nav a {
-            color: var(--text-primary);
-            font-weight: 500;
-            padding: 8px 0;
-            position: relative;
-        }
-        .main-nav a:not(.btn):hover { text-decoration: none; }
-        .main-nav a:not(.btn):not(.active)::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--accent);
-            transition: width 0.2s;
-        }
-        .main-nav a:not(.btn):hover::after { width: 100%; }
-        .main-nav a.active { color: var(--accent); }
-        .header-phone {
-            font-weight: 700;
-            font-size: 18px;
-            color: var(--accent);
-        }
-        .nav-toggle { display: none; background: none; border: none; font-size: 24px; cursor: pointer; }
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            border-radius: 6px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: background 0.2s;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .btn-primary {
-            background: var(--accent);
-            color: var(--bg-primary);
-        }
-        .btn-primary:hover {
-            background: var(--accent-hover);
-            text-decoration: none;
-        }
-        .btn-secondary {
-            background: transparent;
-            color: var(--text-primary);
-            border: 1px solid var(--border);
-        }
-        .btn-secondary:hover {
-            background: var(--bg-secondary);
-            text-decoration: none;
-        }
-        .hero {
-            padding: 80px 0;
-            background: var(--bg-secondary);
-        }
-        .hero .eyebrow {
-            display: block;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: var(--text-muted);
-            margin-bottom: 12px;
-        }
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 48px;
-            margin-top: 48px;
-        }
-        .contact-info {
-            background: var(--surface);
-            padding: 32px;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-        }
-        .contact-info h3 { margin-bottom: 20px; }
-        .contact-detail {
-            display: flex;
-            align-items: flex-start;
-            gap: 16px;
-            margin-bottom: 20px;
-        }
-        .contact-detail svg {
-            flex-shrink: 0;
-            width: 24px;
-            height: 24px;
-            color: var(--accent);
-        }
-        .contact-detail p { margin-bottom: 0; }
-        .contact-detail a { color: var(--text-primary); }
-        .contact-detail a:hover { color: var(--accent); }
-        .contact-form-wrapper {
-            background: var(--surface);
-            padding: 32px;
-            border-radius: 8px;
-            border: 1px solid var(--border);
-        }
-        .form-group { margin-bottom: 20px; }
-        .form-group label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 8px;
-            font-size: 14px;
-        }
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px 14px;
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            font-family: inherit;
-            font-size: 16px;
-            background: var(--bg-primary);
-        }
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: 2px solid var(--accent);
-            outline-offset: 2px;
-            border-color: var(--accent);
-        }
-        .form-group textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
-        .map-placeholder {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 24px;
-            margin-top: 32px;
-        }
-        .map-placeholder p { color: var(--text-muted); }
-        .site-footer {
-            background: var(--bg-inverse);
-            color: var(--bg-primary);
-            padding: 64px 0 24px;
-        }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 32px;
-            margin-bottom: 48px;
-        }
-        .footer-col h3 {
-            font-size: 18px;
-            margin-bottom: 16px;
-            color: var(--bg-primary);
-        }
-        .footer-col p {
-            font-size: 14px;
-            margin-bottom: 8px;
-            opacity: 0.9;
-        }
-        .footer-col a {
-            display: block;
-            color: var(--bg-primary);
-            opacity: 0.8;
-            font-size: 14px;
-            padding: 4px 0;
-        }
-        .footer-col a:hover {
-            opacity: 1;
-            text-decoration: none;
-            color: var(--accent);
-        }
-        .footer-bottom {
-            border-top: 1px solid rgba(244, 243, 238, 0.2);
-            padding-top: 24px;
-            text-align: center;
-            font-size: 14px;
-            opacity: 0.7;
-        }
-        .mobile-cta {
-            display: none;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: var(--bg-inverse);
-            padding: 16px;
-            z-index: 1000;
-        }
-        .btn-full { width: 100%; text-align: center; }
-        @media (max-width: 900px) {
-            .contact-grid { grid-template-columns: 1fr; }
-            .footer-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 768px) {
-            .main-nav {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: var(--bg-primary);
-                flex-direction: column;
-                padding: 16px 24px;
-                border-bottom: 1px solid var(--border);
-            }
-            .main-nav.open { display: flex; }
-            .nav-toggle { display: block; }
-            .header-phone { display: none; }
-            .mobile-cta { display: block; }
-            .footer-grid { grid-template-columns: 1fr; }
-            body { padding-bottom: 60px; }
-        }
-    </style>
 </head>
 <body>
     <header class="site-header">
-        <div class="container header-inner">
-            <a href="index.html" class="logo" aria-label="Meridian Concrete Solutions Home">
-                <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#c96442"/><path d="M8 22h16M8 18h16M8 14h16" stroke="#f4f3ee" stroke-width="2"/></svg>
-                <span class="logo-text">Meridian Concrete</span>
+        <div class="header-inner">
+            <a href="/" class="logo" aria-label="Meridian Concrete Solutions Home">
+                <svg class="logo-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="42" height="42" rx="8" fill="#c96442"/><path d="M10 30L18 18L26 26L34 12" stroke="#f4f3ee" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34" cy="12" r="3.5" fill="#f4f3ee"/></svg>
+                <span class="logo-text">Meridian Concrete <span>Solutions</span></span>
             </a>
-            <nav class="main-nav" id="mainNav">
-                <a href="concrete-driveways.html">Driveways</a>
-                <a href="concrete-patios.html">Patios</a>
-                <a href="stamped-concrete.html">Stamped</a>
-                <a href="concrete-repair.html">Repair</a>
-                <a href="concrete-sidewalks.html">Sidewalks</a>
-                <a href="foundations-slabs.html">Foundations</a>
-                <a href="retaining-walls.html">Walls</a>
-                <a href="contact.html" class="btn btn-primary">Free Estimate</a>
-            </nav>
-            <a href="tel:+12085550147" class="header-phone">(208) 555-0147</a>
-            <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('mainNav').classList.toggle('open')">&#9776;</button>
+            <a href="tel:2085550147" class="header-phone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                (208) 555-0147
+            </a>
         </div>
     </header>
+    <nav class="main-nav-container" aria-label="Main navigation">
+        <div class="nav-inner">
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="concrete-driveways.html">Driveways</a></li>
+                <li><a href="concrete-patios.html">Patios</a></li>
+                <li><a href="stamped-concrete.html">Stamped Concrete</a></li>
+                <li><a href="concrete-repair.html">Repair</a></li>
+                <li><a href="concrete-sidewalks.html">Sidewalks</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="nav-cta">Get Quote</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <main>
-        <section class="hero">
-            <div class="container content-width">
-                <span class="eyebrow">Get In Touch</span>
-                <h1>Contact Meridian Concrete Solutions</h1>
-                <p class="lead">Ready to start your concrete project? Whether you need a new driveway, patio, or repair work, we're here to help. Call us or fill out the form below for a free, no-obligation estimate.</p>
+        <section class="hero" style="padding: 7rem 0 4rem;">
+            <div class="hero-inner" style="grid-template-columns: 1fr;">
+                <div class="hero-content" style="max-width: 100%; text-align: center;">
+                    <p class="hero-eyebrow">Get In Touch</p>
+                    <h1>Contact Meridian Concrete Solutions</h1>
+                    <p class="lead">Ready to start your concrete project? Whether you need a new driveway, patio, or repair work, we're here to help. Call us or fill out the form below for a free, no-obligation estimate.</p>
+                </div>
             </div>
         </section>
 
         <section class="section">
             <div class="container">
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <h3>Contact Information</h3>
-                        <div class="contact-detail">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-                            <div>
-                                <p><strong>Phone</strong></p>
-                                <p><a href="tel:+12085550147">(208) 555-0147</a></p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;">
+                    <div class="card-surface reveal" style="padding: 32px;">
+                        <h2 style="margin-bottom: 24px;">Contact Information</h2>
+                        <div style="display: flex; flex-direction: column; gap: 20px;">
+                            <div style="display: flex; align-items: flex-start; gap: 16px;">
+                                <svg style="flex-shrink:0; color: var(--accent); margin-top: 2px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                <div>
+                                    <p style="font-weight: 600; margin-bottom: 2px;">Phone</p>
+                                    <a href="tel:2085550147" style="color: var(--accent); font-size: 18px; font-weight: 700;">(208) 555-0147</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contact-detail">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                            <div>
-                                <p><strong>Email</strong></p>
-                                <p><a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a></p>
+                            <div style="display: flex; align-items: flex-start; gap: 16px;">
+                                <svg style="flex-shrink:0; color: var(--accent); margin-top: 2px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                <div>
+                                    <p style="font-weight: 600; margin-bottom: 2px;">Email</p>
+                                    <a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contact-detail">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                            <div>
-                                <p><strong>Address</strong></p>
-                                <p>123 E Fairview Ave<br>Meridian, ID 83642</p>
+                            <div style="display: flex; align-items: flex-start; gap: 16px;">
+                                <svg style="flex-shrink:0; color: var(--accent); margin-top: 2px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <div>
+                                    <p style="font-weight: 600; margin-bottom: 2px;">Address</p>
+                                    <p style="margin-bottom: 0;">123 E Fairview Ave<br>Meridian, ID 83642</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contact-detail">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                            <div>
-                                <p><strong>Business Hours</strong></p>
-                                <p>Monday – Saturday: 7:00 AM – 6:00 PM<br>Sunday: Closed</p>
+                            <div style="display: flex; align-items: flex-start; gap: 16px;">
+                                <svg style="flex-shrink:0; color: var(--accent); margin-top: 2px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                <div>
+                                    <p style="font-weight: 600; margin-bottom: 2px;">Business Hours</p>
+                                    <p style="margin-bottom: 0;">Monday – Saturday: 7:00 AM – 6:00 PM<br>Sunday: Closed</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contact-detail">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                            <div>
-                                <p><strong>Service Area</strong></p>
-                                <p>Meridian, Boise, Eagle, Kuna, Nampa, Star, and the greater Treasure Valley</p>
+                            <div style="display: flex; align-items: flex-start; gap: 16px;">
+                                <svg style="flex-shrink:0; color: var(--accent); margin-top: 2px;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <div>
+                                    <p style="font-weight: 600; margin-bottom: 2px;">Service Area</p>
+                                    <p style="margin-bottom: 0;">Meridian, Boise, Eagle, Kuna, Nampa, Star, and the greater Treasure Valley</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="contact-form-wrapper">
-                        <h3>Request a Free Estimate</h3>
-                        <form action="#" method="POST">
-                            <div class="form-group">
-                                <label for="name">Full Name *</label>
-                                <input type="text" id="name" name="name" required placeholder="John Smith">
+                    <div class="card-surface reveal stagger-2" style="padding: 32px;">
+                        <h2 style="margin-bottom: 24px;">Request a Free Estimate</h2>
+                        <form action="#" method="POST" data-validate>
+                            <div style="margin-bottom: 20px;">
+                                <label for="name" style="display: block; font-weight: 600; margin-bottom: 6px; font-size: 14px;">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="John Smith" style="width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: 6px; font-family: inherit; font-size: 16px; background: var(--bg-primary);">
                             </div>
-                            <div class="form-group">
-                                <label for="email">Email Address *</label>
-                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            <div style="margin-bottom: 20px;">
+                                <label for="email" style="display: block; font-weight: 600; margin-bottom: 6px; font-size: 14px;">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com" style="width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: 6px; font-family: inherit; font-size: 16px; background: var(--bg-primary);">
                             </div>
-                            <div class="form-group">
-                                <label for="phone">Phone Number *</label>
-                                <input type="tel" id="phone" name="phone" required placeholder="(208) 555-0123">
+                            <div style="margin-bottom: 20px;">
+                                <label for="phone" style="display: block; font-weight: 600; margin-bottom: 6px; font-size: 14px;">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="(208) 555-0123" style="width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: 6px; font-family: inherit; font-size: 16px; background: var(--bg-primary);">
                             </div>
-                            <div class="form-group">
-                                <label for="service">Service Needed *</label>
-                                <select id="service" name="service" required>
+                            <div style="margin-bottom: 20px;">
+                                <label for="service" style="display: block; font-weight: 600; margin-bottom: 6px; font-size: 14px;">Service Needed *</label>
+                                <select id="service" name="service" required style="width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: 6px; font-family: inherit; font-size: 16px; background: var(--bg-primary);">
                                     <option value="">Select a service...</option>
                                     <option value="driveways">Concrete Driveways</option>
                                     <option value="patios">Concrete Patios</option>
                                     <option value="stamped">Stamped Concrete</option>
                                     <option value="repair">Concrete Repair</option>
-                                    <option value="sidewalks">Sidewalks & Walkways</option>
-                                    <option value="foundations">Foundations & Slabs</option>
+                                    <option value="sidewalks">Sidewalks &amp; Walkways</option>
+                                    <option value="foundations">Foundations &amp; Slabs</option>
                                     <option value="walls">Retaining Walls</option>
                                     <option value="other">Other</option>
                                 </select>
                             </div>
-                            <div class="form-group">
-                                <label for="message">Project Details</label>
-                                <textarea id="message" name="message" placeholder="Tell us about your project — size, location, timeline, any specific requirements..."></textarea>
+                            <div style="margin-bottom: 24px;">
+                                <label for="message" style="display: block; font-weight: 600; margin-bottom: 6px; font-size: 14px;">Project Details</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Tell us about your project — size, location, timeline, any specific requirements..." style="width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: 6px; font-family: inherit; font-size: 16px; background: var(--bg-primary); min-height: 120px; resize: vertical;"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-full">Submit Request</button>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
                         </form>
-                    </div>
-                </div>
-
-                <div class="map-placeholder">
-                    <div>
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#c96442" stroke-width="1.5" style="margin: 0 auto 16px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                        <p><strong>Our Location</strong></p>
-                        <p>123 E Fairview Ave, Meridian, ID 83642</p>
-                        <p style="margin-top: 8px; font-size: 13px;">(Map embed placeholder — Google Maps integration coming soon)</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="section" style="background: var(--bg-secondary);">
-            <div class="container content-width">
-                <h2>Why Choose Meridian Concrete Solutions?</h2>
-                <p>Since 2010, we've been the trusted concrete contractor for homeowners across the Treasure Valley. Here's what sets us apart:</p>
-                <ul style="margin: 24px 0; padding-left: 24px;">
-                    <li style="margin-bottom: 12px;"><strong>Licensed & Insured:</strong> Full coverage for your peace of mind</li>
-                    <li style="margin-bottom: 12px;"><strong>Free Estimates:</strong> No obligation, transparent pricing</li>
-                    <li style="margin-bottom: 12px;"><strong>Local Expertise:</strong> We understand Idaho soil and climate conditions</li>
-                    <li style="margin-bottom: 12px;"><strong>Quality Materials:</strong> 4,000 PSI concrete, proper reinforcement</li>
-                    <li style="margin-bottom: 12px;"><strong>On-Time Completion:</strong> We respect your schedule and property</li>
-                    <li style="margin-bottom: 12px;"><strong>Warranty Protection:</strong> Standing behind our workmanship</li>
-                </ul>
-                <p>Whether you're in Meridian's south end neighborhoods, Eagle's foothills communities, or anywhere across Boise, Nampa, Kuna, or Star — we're ready to bring your concrete project to life.</p>
+            <div class="container">
+                <div class="content-width">
+                    <h2 class="reveal" style="text-align: center;">Why Choose Meridian Concrete Solutions?</h2>
+                    <p class="reveal" style="text-align: center;">Since 2010, we've been the trusted concrete contractor for homeowners across the Treasure Valley. Here's what sets us apart:</p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 32px;">
+                        <div class="card-surface reveal" style="padding: 20px;">
+                            <p style="margin-bottom: 0;"><strong style="color: var(--accent);">Licensed &amp; Insured:</strong> Full coverage for your peace of mind</p>
+                        </div>
+                        <div class="card-surface reveal stagger-2" style="padding: 20px;">
+                            <p style="margin-bottom: 0;"><strong style="color: var(--accent);">Free Estimates:</strong> No obligation, transparent pricing</p>
+                        </div>
+                        <div class="card-surface reveal stagger-3" style="padding: 20px;">
+                            <p style="margin-bottom: 0;"><strong style="color: var(--accent);">Local Expertise:</strong> We understand Idaho soil and climate conditions</p>
+                        </div>
+                        <div class="card-surface reveal stagger-4" style="padding: 20px;">
+                            <p style="margin-bottom: 0;"><strong style="color: var(--accent);">Quality Materials:</strong> 4,000 PSI concrete, proper reinforcement</p>
+                        </div>
+                        <div class="card-surface reveal stagger-5" style="padding: 20px;">
+                            <p style="margin-bottom: 0;"><strong style="color: var(--accent);">On-Time Completion:</strong> We respect your schedule and property</p>
+                        </div>
+                        <div class="card-surface reveal stagger-6" style="padding: 20px;">
+                            <p style="margin-bottom: 0;"><strong style="color: var(--accent);">Warranty Protection:</strong> Standing behind our workmanship</p>
+                        </div>
+                    </div>
+                    <p class="reveal" style="text-align: center; margin-top: 32px;">Whether you're in Meridian's south end neighborhoods, Eagle's foothills communities, or anywhere across Boise, Nampa, Kuna, or Star — we're ready to bring your concrete project to life.</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <h3>Meridian Concrete Solutions</h3>
-                <p>123 E Fairview Ave<br>Meridian, ID 83642</p>
-                <p><a href="tel:+12085550147">(208) 555-0147</a></p>
-                <p><a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a></p>
-                <p>Mon–Sat: 7:00 AM – 6:00 PM</p>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/" class="logo" style="margin-bottom: 1.25rem;">
+                    <svg class="logo-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="42" height="42" rx="8" fill="#c96442"/><path d="M10 30L18 18L26 26L34 12" stroke="#f4f3ee" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34" cy="12" r="3.5" fill="#f4f3ee"/></svg>
+                    <span class="logo-text" style="color: #f4f3ee;">Meridian Concrete <span style="color: rgba(244, 243, 238, 0.65);">Solutions</span></span>
+                </a>
+                <p>Your trusted concrete contractor serving Meridian and the Treasure Valley since 2010.</p>
+                <div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>123 E Fairview Ave<br>Meridian, ID 83642</span></div>
+                <div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:2085550147">(208) 555-0147</a></div>
             </div>
-            <div class="footer-col">
-                <h3>Services</h3>
-                <a href="concrete-driveways.html">Concrete Driveways</a>
-                <a href="concrete-patios.html">Concrete Patios</a>
-                <a href="stamped-concrete.html">Stamped Concrete</a>
-                <a href="concrete-repair.html">Concrete Repair</a>
-                <a href="concrete-sidewalks.html">Sidewalks & Walkways</a>
-                <a href="foundations-slabs.html">Foundations & Slabs</a>
-                <a href="retaining-walls.html">Retaining Walls</a>
-            </div>
-            <div class="footer-col">
-                <h3>Service Areas</h3>
-                <a href="boise-id.html">Boise</a>
-                <a href="meridian-id.html">Meridian</a>
-                <a href="eagle-id.html">Eagle</a>
-                <a href="kuna-id.html">Kuna</a>
-                <a href="nampa-id.html">Nampa</a>
-                <a href="star-id.html">Star</a>
-            </div>
-            <div class="footer-col">
-                <h3>Company</h3>
-                <a href="about.html">About Us</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Service</a>
-            </div>
+            <div class="footer-col"><h4>Services</h4><ul><li><a href="concrete-driveways.html">Concrete Driveways</a></li><li><a href="concrete-patios.html">Concrete Patios</a></li><li><a href="stamped-concrete.html">Stamped Concrete</a></li><li><a href="concrete-repair.html">Concrete Repair</a></li><li><a href="concrete-sidewalks.html">Sidewalks &amp; Walkways</a></li><li><a href="foundations-slabs.html">Foundations &amp; Slabs</a></li><li><a href="retaining-walls.html">Retaining Walls</a></li></ul></div>
+            <div class="footer-col"><h4>Service Areas</h4><ul><li><a href="meridian-id.html">Meridian</a></li><li><a href="boise-id.html">Boise</a></li><li><a href="eagle-id.html">Eagle</a></li><li><a href="kuna-id.html">Kuna</a></li><li><a href="nampa-id.html">Nampa</a></li><li><a href="star-id.html">Star</a></li></ul></div>
+            <div class="footer-col"><h4>Contact</h4><div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a></div><div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Mon-Sat: 7:00 AM - 6:00 PM</span></div></div>
         </div>
-        <div class="container footer-bottom">
-            <p>&copy; 2024 Meridian Concrete Solutions. All rights reserved. Licensed & insured.</p>
-        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Meridian Concrete Solutions. All rights reserved.</p><p><a href="privacy.html">Privacy Policy</a><span>|</span><a href="terms.html">Terms of Service</a></p></div>
     </footer>
 
-    <div class="mobile-cta">
-        <a href="tel:+12085550147" class="btn btn-primary btn-full">Call (208) 555-0147</a>
-    </div>
-
+    <div class="mobile-cta"><a href="tel:2085550147"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (208) 555-0147</a></div>
     <script src="js/main.js"></script>
 </body>
 </html>

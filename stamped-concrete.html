@@ -13,6 +13,9 @@
     <meta property="og:url" content="https://meridianidconcrete.com/stamped-concrete.html">
     <meta property="og:site_name" content="Meridian Concrete Solutions">
     <meta name="twitter:card" content="summary">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script type="application/ld+json">
     {
@@ -48,161 +51,174 @@
 </head>
 <body>
     <header class="site-header">
-        <div class="container header-inner">
-            <a href="index.html" class="logo" aria-label="Meridian Concrete Solutions Home">
-                <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#c96442"/><path d="M8 22h16M8 18h16M8 14h16" stroke="#f4f3ee" stroke-width="2"/></svg>
-                <span class="logo-text">Meridian Concrete</span>
+        <div class="header-inner">
+            <a href="/" class="logo" aria-label="Meridian Concrete Solutions Home">
+                <svg class="logo-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect width="42" height="42" rx="8" fill="#c96442"/>
+                    <path d="M10 30L18 18L26 26L34 12" stroke="#f4f3ee" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="34" cy="12" r="3.5" fill="#f4f3ee"/>
+                </svg>
+                <span class="logo-text">Meridian Concrete <span>Solutions</span></span>
             </a>
-            <nav class="main-nav" id="mainNav">
-                <a href="concrete-driveways.html">Driveways</a>
-                <a href="concrete-patios.html">Patios</a>
-                <a href="concrete-repair.html">Repair</a>
-                <a href="concrete-sidewalks.html">Sidewalks</a>
-                <a href="foundations-slabs.html">Foundations</a>
-                <a href="retaining-walls.html">Walls</a>
-                <a href="contact.html" class="btn btn-primary">Free Estimate</a>
-            </nav>
-            <a href="tel:+12085550147" class="header-phone">(208) 555-0147</a>
-            <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('mainNav').classList.toggle('open')">&#9776;</button>
+            <a href="tel:2085550147" class="header-phone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                (208) 555-0147
+            </a>
         </div>
     </header>
+    <nav class="main-nav-container" aria-label="Main navigation">
+        <div class="nav-inner">
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="concrete-driveways.html">Driveways</a></li>
+                <li><a href="concrete-patios.html">Patios</a></li>
+                <li><a href="stamped-concrete.html" class="active">Stamped Concrete</a></li>
+                <li><a href="concrete-repair.html">Repair</a></li>
+                <li><a href="concrete-sidewalks.html">Sidewalks</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="nav-cta">Get Quote</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <main>
         <section class="hero">
-            <div class="container">
-                <span class="eyebrow">Decorative Concrete Specialist</span>
-                <h1>Stamped Concrete in Meridian, ID</h1>
-                <p class="lead">Transform ordinary concrete into stunning surfaces that mimic natural stone, brick, or wood. Stamped concrete offers the beauty of premium materials at a fraction of the cost, with the durability needed for Idaho's demanding climate. Serving Meridian, Boise, Eagle, and the entire Treasure Valley.</p>
-                <div class="hero-ctas">
-                    <a href="tel:+12085550147" class="btn btn-primary">Call (208) 555-0147</a>
-                    <a href="contact.html" class="btn btn-secondary">View Pattern Gallery</a>
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">Decorative Concrete Specialist</p>
+                    <h1>Stamped Concrete in Meridian, ID</h1>
+                    <p class="lead">Transform ordinary concrete into stunning surfaces that mimic natural stone, brick, or wood. Stamped concrete offers the beauty of premium materials at a fraction of the cost, with the durability needed for Idaho's demanding climate. Serving Meridian, Boise, Eagle, and the entire Treasure Valley.</p>
+                    <div class="hero-ctas">
+                        <a href="tel:2085550147" class="btn btn-primary btn-lg">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            Call (208) 555-0147
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary btn-lg">Request Quote</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-concrete-driveway.jpg" alt="Concrete service in Meridian Idaho" width="600" height="450" loading="eager">
                 </div>
             </div>
         </section>
 
         <section class="section">
-            <div class="container content-width">
-                <h2>What Is Stamped Concrete?</h2>
-                <p>Stamped concrete — also called patterned or imprinted concrete — is regular concrete that has been textured and colored to resemble other materials. While the concrete is still plastic (workable), specialized polyurethane stamps are pressed into the surface to create patterns. Color is added through integral pigments mixed into the concrete, surface-applied color hardeners, or penetrating stains applied after curing. The result is a durable concrete surface with the visual appeal of natural stone, slate, brick, or wood planking.</p>
-                <p>Stamped concrete has become increasingly popular throughout the Treasure Valley as homeowners and businesses seek attractive outdoor surfaces without the cost and maintenance of genuine stone or pavers. New developments in Meridian like Tuscany Village and Siena Springs feature stamped concrete extensively, as do upscale properties in Eagle and southwest Boise. The technique works equally well for driveways, patios, pool decks, walkways, and even interior floors.</p>
+            <div class="container">
+                <div class="content-width">
+                    <h2>What Is Stamped Concrete?</h2>
+                    <p>Stamped concrete — also called patterned or imprinted concrete — is regular concrete that has been textured and colored to resemble other materials. While the concrete is still plastic (workable), specialized polyurethane stamps are pressed into the surface to create patterns. Color is added through integral pigments mixed into the concrete, surface-applied color hardeners, or penetrating stains applied after curing. The result is a durable concrete surface with the visual appeal of natural stone, slate, brick, or wood planking.</p>
+                    <p>Stamped concrete has become increasingly popular throughout the Treasure Valley as homeowners and businesses seek attractive outdoor surfaces without the cost and maintenance of genuine stone or pavers. New developments in Meridian like Tuscany Village and Siena Springs feature stamped concrete extensively, as do upscale properties in Eagle and southwest Boise. The technique works equally well for driveways, patios, pool decks, walkways, and even interior floors.</p>
 
-                <h2>Popular Stamped Concrete Patterns</h2>
-                <p>We offer dozens of stamp patterns, but several have become favorites among Treasure Valley property owners. Each pattern creates a distinct aesthetic that can complement different architectural styles:</p>
+                    <h2>Popular Stamped Concrete Patterns</h2>
+                    <p>We offer dozens of stamp patterns, but several have become favorites among Treasure Valley property owners. Each pattern creates a distinct aesthetic that can complement different architectural styles:</p>
 
-                <h3>Ashlar Slate</h3>
-                <p>Ashlar slate mimics rectangular stone blocks laid in regular courses, creating a formal, elegant appearance. This pattern works particularly well for driveways and large patios where the geometric layout adds visual structure. The rectangular shapes can be oriented in various directions to create different effects — running bond (offset rows) is most common, but herringbone and basketweave variations are also available. Ashlar slate complements traditional and transitional home styles, and the pattern's clean lines work well with both light and dark color choices. This is one of our most requested patterns for Meridian homes with craftsman or colonial architecture.</p>
+                    <h3>Ashlar Slate</h3>
+                    <p>Ashlar slate mimics rectangular stone blocks laid in regular courses, creating a formal, elegant appearance. This pattern works particularly well for driveways and large patios where the geometric layout adds visual structure. The rectangular shapes can be oriented in various directions to create different effects — running bond (offset rows) is most common, but herringbone and basketweave variations are also available. Ashlar slate complements traditional and transitional home styles, and the pattern's clean lines work well with both light and dark color choices. This is one of our most requested patterns for Meridian homes with craftsman or colonial architecture.</p>
 
-                <h3>Cobblestone</h3>
-                <p>Cobblestone patterns replicate the rounded, irregular stones used in historic European streets and courtyards. The organic shapes and varied sizes create a timeless, old-world aesthetic that adds character to any property. Cobblestone stamped concrete is particularly popular for entry walks, courtyard patios, and driveway aprons where the pattern can be showcased. The irregular shapes naturally hide minor imperfections and wear, making this a practical choice for high-traffic areas. We often recommend cobblestone for Eagle properties where homeowners seek a distinctive, upscale appearance that stands out from typical suburban finishes.</p>
+                    <h3>Cobblestone</h3>
+                    <p>Cobblestone patterns replicate the rounded, irregular stones used in historic European streets and courtyards. The organic shapes and varied sizes create a timeless, old-world aesthetic that adds character to any property. Cobblestone stamped concrete is particularly popular for entry walks, courtyard patios, and driveway aprons where the pattern can be showcased. The irregular shapes naturally hide minor imperfections and wear, making this a practical choice for high-traffic areas. We often recommend cobblestone for Eagle properties where homeowners seek a distinctive, upscale appearance that stands out from typical suburban finishes.</p>
 
-                <h3>Flagstone (Random Stone)</h3>
-                <p>Flagstone patterns simulate natural flat stones fitted together with mortar joints. The irregular shapes and sizes create an organic, naturalistic appearance that blends beautifully with Idaho's high desert landscape. Random flagstone is our most popular choice for backyard patios and pool decks, as it creates a resort-like atmosphere while maintaining concrete's durability. The pattern works with a wide range of color options, from warm tans and terra cottas to cool grays and buff tones. Flagstone stamped concrete is especially well-suited to ranch-style homes and properties with natural landscaping.</p>
+                    <h3>Flagstone (Random Stone)</h3>
+                    <p>Flagstone patterns simulate natural flat stones fitted together with mortar joints. The irregular shapes and sizes create an organic, naturalistic appearance that blends beautifully with Idaho's high desert landscape. Random flagstone is our most popular choice for backyard patios and pool decks, as it creates a resort-like atmosphere while maintaining concrete's durability. The pattern works with a wide range of color options, from warm tans and terra cottas to cool grays and buff tones. Flagstone stamped concrete is especially well-suited to ranch-style homes and properties with natural landscaping.</p>
 
-                <h3>Additional Pattern Options</h3>
-                <p>Beyond these three primary patterns, we offer numerous other stamp designs: wood plank (mimicking deck boards), European fan (artistic circular pattern), brick (traditional running bond or herringbone), slate (irregular natural stone), and custom textures. We can also combine patterns — using a border of one pattern with a field of another, or creating medallions and accents within a larger surface. Our design consultation helps you select patterns that complement your home's architecture and your personal aesthetic preferences.</p>
-
-                <h2>Color Options for Stamped Concrete</h2>
-                <p>Color is what brings stamped concrete patterns to life. We offer multiple coloring methods, often used in combination to achieve rich, natural-looking results:</p>
-                <p><strong>Integral color:</strong> Pigments are mixed directly into the concrete before pouring, creating consistent color throughout the slab. This method provides excellent fade resistance since the color extends through the full thickness. Integral color is ideal for base tones and works well in earth tones like tan, gray, brown, and terra cotta.</p>
-                <p><strong>Color hardeners:</strong> Dry shake pigments applied to the surface while concrete is curing create intense, vibrant color at the surface. Color hardeners also increase surface durability and wear resistance. We typically use color hardeners for the primary pattern color, often layering two colors to create highlights and shadows that enhance the stamped texture.</p>
-                <p><strong>Antiquing releases:</strong> Powdered or liquid release agents prevent stamps from sticking to concrete while adding secondary color tones in the recessed areas of the pattern. This creates depth and dimension, making the stamped pattern appear more natural. Common antiquing colors include darker browns, grays, or blacks that simulate natural weathering.</p>
-                <p><strong>Penetrating stains:</strong> Acid-based or water-based stains applied after curing react with or penetrate the concrete surface to create variegated, natural-looking color variations. Stains work well for achieving aged or weathered appearances and can be layered for custom effects.</p>
-                <p>Popular color combinations in the Treasure Valley include warm sandstone with dark brown antiquing (complements high desert surroundings), slate gray with charcoal accents (modern, clean appearance), and terra cotta with burnt umber highlights (Mediterranean and Spanish-style homes). We maintain a color library with physical samples so you can see how colors appear in different lighting conditions before making your selection.</p>
-
-                <h2>Stamped Concrete Photo Gallery</h2>
-                <p>Viewing actual installations helps you visualize possibilities for your own property. Our portfolio includes hundreds of completed stamped concrete projects throughout Meridian, Boise, Eagle, and surrounding communities. While we're updating our online gallery, we invite you to request a consultation where we'll show you photos of similar projects and discuss how different patterns and colors would work on your specific property. We can also arrange visits to completed installations (with homeowner permission) so you can see and feel stamped concrete surfaces in person.</p>
-                <p><em>Gallery note: Our project photo gallery is being updated. Contact us at (208) 555-0147 to view our portfolio of completed stamped concrete installations in the Treasure Valley.</em></p>
-
-                <h2>Stamped Concrete Cost vs. Natural Stone</h2>
-                <p>One of stamped concrete's primary advantages is cost savings compared to the natural materials it mimics. Here's how pricing typically compares in the Meridian area:</p>
-                <p><strong>Stamped concrete:</strong> $10-15 per square foot installed, depending on pattern complexity, color layers, and site conditions. Basic single-color, single-pattern installations fall toward the lower end. Multiple colors, custom patterns, and intricate borders increase the price.</p>
-                <p><strong>Natural flagstone:</strong> $18-30 per square foot installed. Natural stone requires more labor-intensive installation, with each piece individually placed and bedded in mortar or sand. Material costs vary significantly based on stone type and source.</p>
-                <p><strong>Pavers:</strong> $15-25 per square foot installed. Concrete or clay pavers offer similar aesthetic options but require edge restraints, base preparation, and joint sand. Individual pavers can shift or settle over time, requiring periodic maintenance.</p>
-                <p><strong>Cut stone:</strong> $25-45+ per square foot installed. Premium materials like granite, travertine, or imported slate command the highest prices. These materials offer unmatched natural beauty but require regular sealing and maintenance.</p>
-                <p>Beyond initial installation cost, stamped concrete offers long-term savings. Unlike pavers that can shift and require releveling, or natural stone that needs periodic resealing, stamped concrete is a monolithic surface that remains stable with minimal maintenance. Occasional cleaning and resealing every 3-5 years keeps stamped concrete looking fresh for 15-25 years or more.</p>
-
-                <h2>The Stamped Concrete Installation Process</h2>
-                <p>Quality stamped concrete requires skilled craftsmanship and careful attention to timing. Our installation process ensures consistent results:</p>
-                <p><strong>Site preparation:</strong> Excavation, grading, and compacted gravel base installation — identical to standard concrete preparation. Proper base work is critical; stamped concrete is no more forgiving of poor subgrades than regular concrete.</p>
-                <p><strong>Forming and reinforcement:</strong> Edge forms establish the slab perimeter. Steel rebar or fiber mesh reinforcement prevents cracking. Control joints are planned to align with pattern lines where possible, minimizing their visual impact.</p>
-                <p><strong>Concrete placement:</strong> 4,000 PSI concrete is poured and screeded to proper elevation. For stamped applications, we use a slightly stiffer mix that holds stamp impressions better without slumping.</p>
-                <p><strong>Color application:</strong> If using surface color hardeners, they're broadcast evenly across the surface and troweled in. Multiple layers may be applied for depth of color.</p>
-                <p><strong>Stamping:</strong> Once the concrete reaches the proper consistency (firm but still impressionable), release agent is applied and stamps are pressed into the surface. This requires careful timing — too early and the concrete slumps; too late and it won't accept the impression. Our crews have the experience to read concrete conditions and stamp at the optimal moment.</p>
-                <p><strong>Curing and sealing:</strong> After stamping, the surface is allowed to cure for 24-48 hours before cleaning off excess release agent. A penetrating sealer is applied after 7-14 days, with a second coat recommended for enhanced protection and sheen.</p>
-
-                <h2>Maintenance for Stamped Concrete</h2>
-                <p>Stamped concrete is low-maintenance compared to the materials it mimics. Regular sweeping and occasional washing with mild detergent keep surfaces clean. Avoid deicing salts in winter, as they can damage the sealer and cause surface spalling — use sand for traction instead. Resealing every 3-5 years protects the color and surface from UV fading, wear, and moisture penetration. We offer sealing services for existing stamped concrete, whether we installed it originally or you're looking to refresh an older surface.</p>
-
-                <h2>Our Complete Concrete Services</h2>
-                <p>In addition to stamped concrete, we provide <a href="concrete-driveways.html">concrete driveways</a>, <a href="concrete-patios.html">concrete patios</a>, <a href="concrete-repair.html">concrete repair</a>, <a href="concrete-sidewalks.html">sidewalks and walkways</a>, <a href="foundations-slabs.html">foundations and slabs</a>, and <a href="retaining-walls.html">retaining walls</a> throughout the Treasure Valley.</p>
-
-                <h2>Serving the Treasure Valley</h2>
-                <p>We install stamped concrete throughout the greater Boise area, including <a href="meridian-id.html">Meridian</a>, <a href="boise-id.html">Boise</a>, <a href="eagle-id.html">Eagle</a>, <a href="kuna-id.html">Kuna</a>, <a href="nampa-id.html">Nampa</a>, and <a href="star-id.html">Star</a>. Our portfolio includes projects in every price range and style, from modest front walkways to expansive estate driveways. We work with homeowners, builders, architects, and property managers to create custom stamped concrete solutions that enhance property value and outdoor enjoyment.</p>
-
-                <h2>Free Stamped Concrete Consultations</h2>
-                <p>Choosing the right pattern and color for your stamped concrete project requires considering your home's architecture, existing landscaping, and personal preferences. We offer free on-site consultations where we discuss your goals, show you pattern and color samples, and provide detailed estimates. Most stamped concrete projects are completed in 3-5 days from excavation to sealing, with minimal disruption to your daily routine.</p>
-                <p>Call (208) 555-0147 or request your free consultation online. Let us help you create a stamped concrete surface that combines beauty, durability, and value for your Treasure Valley property.</p>
+                    <h3>Additional Pattern Options</h3>
+                    <p>Beyond these three primary patterns, we offer numerous other stamp designs: wood plank (mimicking deck boards), European fan (artistic circular pattern), brick (traditional running bond or herringbone), slate (irregular natural stone), and custom textures. We can also combine patterns — using a border of one pattern with a field of another, or creating medallions and accents within a larger surface. Our design consultation helps you select patterns that complement your home's architecture and your personal aesthetic preferences.</p>
+                </div>
             </div>
         </section>
 
-        <section class="section section-inverse">
-            <div class="container text-center">
+        <section class="section section-alt">
+            <div class="container">
+                <div class="content-width">
+                    <h2>Color Options for Stamped Concrete</h2>
+                    <p>Color is what brings stamped concrete patterns to life. We offer multiple coloring methods, often used in combination to achieve rich, natural-looking results:</p>
+                    <p><strong>Integral color:</strong> Pigments are mixed directly into the concrete before pouring, creating consistent color throughout the slab. This method provides excellent fade resistance since the color extends through the full thickness. Integral color is ideal for base tones and works well in earth tones like tan, gray, brown, and terra cotta.</p>
+                    <p><strong>Color hardeners:</strong> Dry shake pigments applied to the surface while concrete is curing create intense, vibrant color at the surface. Color hardeners also increase surface durability and wear resistance. We typically use color hardeners for the primary pattern color, often layering two colors to create highlights and shadows that enhance the stamped texture.</p>
+                    <p><strong>Antiquing releases:</strong> Powdered or liquid release agents prevent stamps from sticking to concrete while adding secondary color tones in the recessed areas of the pattern. This creates depth and dimension, making the stamped pattern appear more natural. Common antiquing colors include darker browns, grays, or blacks that simulate natural weathering.</p>
+                    <p><strong>Penetrating stains:</strong> Acid-based or water-based stains applied after curing react with or penetrate the concrete surface to create variegated, natural-looking color variations. Stains work well for achieving aged or weathered appearances and can be layered for custom effects.</p>
+                    <p>Popular color combinations in the Treasure Valley include warm sandstone with dark brown antiquing (complements high desert surroundings), slate gray with charcoal accents (modern, clean appearance), and terra cotta with burnt umber highlights (Mediterranean and Spanish-style homes). We maintain a color library with physical samples so you can see how colors appear in different lighting conditions before making your selection.</p>
+
+                    <h2>Stamped Concrete Cost vs. Natural Stone</h2>
+                    <p>One of stamped concrete's primary advantages is cost savings compared to the natural materials it mimics. Here's how pricing typically compares in the Meridian area:</p>
+                    <p><strong>Stamped concrete:</strong> $10-15 per square foot installed, depending on pattern complexity, color layers, and site conditions. Basic single-color, single-pattern installations fall toward the lower end. Multiple colors, custom patterns, and intricate borders increase the price.</p>
+                    <p><strong>Natural flagstone:</strong> $18-30 per square foot installed. Natural stone requires more labor-intensive installation, with each piece individually placed and bedded in mortar or sand. Material costs vary significantly based on stone type and source.</p>
+                    <p><strong>Pavers:</strong> $15-25 per square foot installed. Concrete or clay pavers offer similar aesthetic options but require edge restraints, base preparation, and joint sand. Individual pavers can shift or settle over time, requiring periodic maintenance.</p>
+                    <p><strong>Cut stone:</strong> $25-45+ per square foot installed. Premium materials like granite, travertine, or imported slate command the highest prices. These materials offer unmatched natural beauty but require regular sealing and maintenance.</p>
+                    <p>Beyond initial installation cost, stamped concrete offers long-term savings. Unlike pavers that can shift and require releveling, or natural stone that needs periodic resealing, stamped concrete is a monolithic surface that remains stable with minimal maintenance. Occasional cleaning and resealing every 3-5 years keeps stamped concrete looking fresh for 15-25 years or more.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="content-width">
+                    <h2>The Stamped Concrete Installation Process</h2>
+                    <p>Quality stamped concrete requires skilled craftsmanship and careful attention to timing. Our installation process ensures consistent results:</p>
+                    <p><strong>Site preparation:</strong> Excavation, grading, and compacted gravel base installation — identical to standard concrete preparation. Proper base work is critical; stamped concrete is no more forgiving of poor subgrades than regular concrete.</p>
+                    <p><strong>Forming and reinforcement:</strong> Edge forms establish the slab perimeter. Steel rebar or fiber mesh reinforcement prevents cracking. Control joints are planned to align with pattern lines where possible, minimizing their visual impact.</p>
+                    <p><strong>Concrete placement:</strong> 4,000 PSI concrete is poured and screeded to proper elevation. For stamped applications, we use a slightly stiffer mix that holds stamp impressions better without slumping.</p>
+                    <p><strong>Color application:</strong> If using surface color hardeners, they're broadcast evenly across the surface and troweled in. Multiple layers may be applied for depth of color.</p>
+                    <p><strong>Stamping:</strong> Once the concrete reaches the proper consistency (firm but still impressionable), release agent is applied and stamps are pressed into the surface. This requires careful timing — too early and the concrete slumps; too late and it won't accept the impression. Our crews have the experience to read concrete conditions and stamp at the optimal moment.</p>
+                    <p><strong>Curing and sealing:</strong> After stamping, the surface is allowed to cure for 24-48 hours before cleaning off excess release agent. A penetrating sealer is applied after 7-14 days, with a second coat recommended for enhanced protection and sheen.</p>
+
+                    <h2>Maintenance for Stamped Concrete</h2>
+                    <p>Stamped concrete is low-maintenance compared to the materials it mimics. Regular sweeping and occasional washing with mild detergent keep surfaces clean. Avoid deicing salts in winter, as they can damage the sealer and cause surface spalling — use sand for traction instead. Resealing every 3-5 years protects the color and surface from UV fading, wear, and moisture penetration. We offer sealing services for existing stamped concrete, whether we installed it originally or you're looking to refresh an older surface.</p>
+
+                    <h2>Our Complete Concrete Services</h2>
+                    <p>In addition to stamped concrete, we provide <a href="concrete-driveways.html">concrete driveways</a>, <a href="concrete-patios.html">concrete patios</a>, <a href="concrete-repair.html">concrete repair</a>, <a href="concrete-sidewalks.html">sidewalks and walkways</a>, <a href="foundations-slabs.html">foundations and slabs</a>, and <a href="retaining-walls.html">retaining walls</a> throughout the Treasure Valley.</p>
+
+                    <h2>Serving the Treasure Valley</h2>
+                    <p>We install stamped concrete throughout the greater Boise area, including <a href="meridian-id.html">Meridian</a>, <a href="boise-id.html">Boise</a>, <a href="eagle-id.html">Eagle</a>, <a href="kuna-id.html">Kuna</a>, <a href="nampa-id.html">Nampa</a>, and <a href="star-id.html">Star</a>. Our portfolio includes projects in every price range and style, from modest front walkways to expansive estate driveways. We work with homeowners, builders, architects, and property managers to create custom stamped concrete solutions that enhance property value and outdoor enjoyment.</p>
+
+                    <h2>Free Stamped Concrete Consultations</h2>
+                    <p>Choosing the right pattern and color for your stamped concrete project requires considering your home's architecture, existing landscaping, and personal preferences. We offer free on-site consultations where we discuss your goals, show you pattern and color samples, and provide detailed estimates. Most stamped concrete projects are completed in 3-5 days from excavation to sealing, with minimal disruption to your daily routine.</p>
+                    <p>Call (208) 555-0147 or request your free consultation online. Let us help you create a stamped concrete surface that combines beauty, durability, and value for your Treasure Valley property.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="container">
                 <h2>Ready for Custom Stamped Concrete?</h2>
                 <p>Beautiful patterns, rich colors, and lasting durability. Free design consultations and estimates.</p>
-                <div class="hero-ctas">
-                    <a href="tel:+12085550147" class="btn btn-primary">(208) 555-0147</a>
-                    <a href="contact.html" class="btn btn-secondary">Request Consultation</a>
+                <div class="hero-ctas" style="justify-content: center;">
+                    <a href="tel:2085550147" class="btn btn-inverse btn-lg">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        (208) 555-0147
+                    </a>
+                    <a href="contact.html" class="btn btn-ghost btn-lg">Request Consultation Online</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <h3>Meridian Concrete Solutions</h3>
-                <p>123 E Fairview Ave<br>Meridian, ID 83642</p>
-                <p><a href="tel:+12085550147">(208) 555-0147</a></p>
-                <p><a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a></p>
-                <p>Mon–Sat: 7:00 AM – 6:00 PM</p>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/" class="logo" style="margin-bottom: 1.25rem;">
+                    <svg class="logo-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="42" height="42" rx="8" fill="#c96442"/><path d="M10 30L18 18L26 26L34 12" stroke="#f4f3ee" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34" cy="12" r="3.5" fill="#f4f3ee"/></svg>
+                    <span class="logo-text" style="color: #f4f3ee;">Meridian Concrete <span style="color: rgba(244, 243, 238, 0.65);">Solutions</span></span>
+                </a>
+                <p>Your trusted concrete contractor serving Meridian and the Treasure Valley since 2010.</p>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>123 E Fairview Ave<br>Meridian, ID 83642</span>
+                </div>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <a href="tel:2085550147">(208) 555-0147</a>
+                </div>
             </div>
-            <div class="footer-col">
-                <h3>Services</h3>
-                <a href="concrete-driveways.html">Concrete Driveways</a>
-                <a href="concrete-patios.html">Concrete Patios</a>
-                <a href="stamped-concrete.html">Stamped Concrete</a>
-                <a href="concrete-repair.html">Concrete Repair</a>
-                <a href="concrete-sidewalks.html">Sidewalks & Walkways</a>
-                <a href="foundations-slabs.html">Foundations & Slabs</a>
-                <a href="retaining-walls.html">Retaining Walls</a>
-            </div>
-            <div class="footer-col">
-                <h3>Service Areas</h3>
-                <a href="boise-id.html">Boise</a>
-                <a href="meridian-id.html">Meridian</a>
-                <a href="eagle-id.html">Eagle</a>
-                <a href="kuna-id.html">Kuna</a>
-                <a href="nampa-id.html">Nampa</a>
-                <a href="star-id.html">Star</a>
-            </div>
-            <div class="footer-col">
-                <h3>Company</h3>
-                <a href="about.html">About Us</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Service</a>
-            </div>
+            <div class="footer-col"><h4>Services</h4><ul><li><a href="concrete-driveways.html">Concrete Driveways</a></li><li><a href="concrete-patios.html">Concrete Patios</a></li><li><a href="stamped-concrete.html">Stamped Concrete</a></li><li><a href="concrete-repair.html">Concrete Repair</a></li><li><a href="concrete-sidewalks.html">Sidewalks &amp; Walkways</a></li><li><a href="foundations-slabs.html">Foundations &amp; Slabs</a></li><li><a href="retaining-walls.html">Retaining Walls</a></li></ul></div>
+            <div class="footer-col"><h4>Service Areas</h4><ul><li><a href="meridian-id.html">Meridian</a></li><li><a href="boise-id.html">Boise</a></li><li><a href="eagle-id.html">Eagle</a></li><li><a href="kuna-id.html">Kuna</a></li><li><a href="nampa-id.html">Nampa</a></li><li><a href="star-id.html">Star</a></li></ul></div>
+            <div class="footer-col"><h4>Contact</h4><div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a></div><div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Mon-Sat: 7:00 AM - 6:00 PM</span></div></div>
         </div>
-        <div class="container footer-bottom">
-            <p>&copy; 2024 Meridian Concrete Solutions. All rights reserved. Licensed & insured.</p>
-        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Meridian Concrete Solutions. All rights reserved.</p><p><a href="privacy.html">Privacy Policy</a><span>|</span><a href="terms.html">Terms of Service</a></p></div>
     </footer>
-
-    <div class="mobile-cta">
-        <a href="tel:+12085550147" class="btn btn-primary btn-full">Call (208) 555-0147</a>
-    </div>
-
+    <div class="mobile-cta"><a href="tel:2085550147"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (208) 555-0147</a></div>
     <script src="js/main.js"></script>
 </body>
 </html>

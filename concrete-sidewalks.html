@@ -13,6 +13,9 @@
     <meta property="og:url" content="https://meridianidconcrete.com/concrete-sidewalks.html">
     <meta property="og:site_name" content="Meridian Concrete Solutions">
     <meta name="twitter:card" content="summary">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script type="application/ld+json">
     {
@@ -48,140 +51,151 @@
 </head>
 <body>
     <header class="site-header">
-        <div class="container header-inner">
-            <a href="index.html" class="logo" aria-label="Meridian Concrete Solutions Home">
-                <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="4" fill="#c96442"/><path d="M8 22h16M8 18h16M8 14h16" stroke="#f4f3ee" stroke-width="2"/></svg>
-                <span class="logo-text">Meridian Concrete</span>
+        <div class="header-inner">
+            <a href="/" class="logo" aria-label="Meridian Concrete Solutions Home">
+                <svg class="logo-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect width="42" height="42" rx="8" fill="#c96442"/>
+                    <path d="M10 30L18 18L26 26L34 12" stroke="#f4f3ee" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="34" cy="12" r="3.5" fill="#f4f3ee"/>
+                </svg>
+                <span class="logo-text">Meridian Concrete <span>Solutions</span></span>
             </a>
-            <nav class="main-nav" id="mainNav">
-                <a href="concrete-driveways.html">Driveways</a>
-                <a href="concrete-patios.html">Patios</a>
-                <a href="concrete-repair.html">Repair</a>
-                <a href="concrete-sidewalks.html" class="active">Sidewalks</a>
-                <a href="foundations-slabs.html">Foundations</a>
-                <a href="retaining-walls.html">Walls</a>
-                <a href="contact.html" class="btn btn-primary">Free Estimate</a>
-            </nav>
-            <a href="tel:+12085550147" class="header-phone">(208) 555-0147</a>
-            <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('mainNav').classList.toggle('open')">&#9776;</button>
+            <a href="tel:2085550147" class="header-phone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                (208) 555-0147
+            </a>
         </div>
     </header>
+    <nav class="main-nav-container" aria-label="Main navigation">
+        <div class="nav-inner">
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="concrete-driveways.html">Driveways</a></li>
+                <li><a href="concrete-patios.html">Patios</a></li>
+                <li><a href="stamped-concrete.html">Stamped Concrete</a></li>
+                <li><a href="concrete-repair.html">Repair</a></li>
+                <li><a href="concrete-sidewalks.html" class="active">Sidewalks</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="nav-cta">Get Quote</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <main>
         <section class="hero">
-            <div class="container">
-                <span class="eyebrow">Sidewalk & Walkway Specialist</span>
-                <h1>Concrete Sidewalks & Walkways in Meridian, ID</h1>
-                <p class="lead">Safe, durable, and attractive concrete sidewalks for homes and businesses across the Treasure Valley. From standard residential paths to ADA-compliant commercial walkways, we build walkways that withstand Idaho weather and enhance your property's curb appeal.</p>
-                <div class="hero-ctas">
-                    <a href="tel:+12085550147" class="btn btn-primary">Call (208) 555-0147</a>
-                    <a href="contact.html" class="btn btn-secondary">Request Free Estimate</a>
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">Sidewalk & Walkway Specialist</p>
+                    <h1>Concrete Sidewalks & Walkways in Meridian, ID</h1>
+                    <p class="lead">Safe, durable, and attractive concrete sidewalks for homes and businesses across the Treasure Valley. From standard residential paths to ADA-compliant commercial walkways, we build walkways that withstand Idaho weather and enhance your property's curb appeal.</p>
+                    <div class="hero-ctas">
+                        <a href="tel:2085550147" class="btn btn-primary btn-lg">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            Call (208) 555-0147
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary btn-lg">Request Free Estimate</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-concrete-driveway.jpg" alt="Concrete service in Meridian Idaho" width="600" height="450" loading="eager">
                 </div>
             </div>
         </section>
 
         <section class="section">
-            <div class="container content-width">
-                <h2>Why Concrete Sidewalks Are Essential for Idaho Properties</h2>
-                <p>Concrete sidewalks serve both practical and aesthetic purposes for Treasure Valley properties. They provide safe, stable walking surfaces that protect visitors from mud, ice, and uneven ground while guiding foot traffic from driveways and streets to your entrance. For commercial properties, well-maintained sidewalks signal professionalism and care for customer safety. For homeowners, they enhance curb appeal and property value while reducing maintenance compared to gravel or dirt paths.</p>
-                <p>Idaho's climate presents specific challenges for sidewalk construction. The freeze-thaw cycles that affect driveways equally impact walkways, requiring proper base preparation, adequate thickness, and strategic joint placement to prevent cracking. Meridian's clay soils expand and contract with moisture changes, potentially causing sidewalk sections to heave or settle. Our installation methods account for these regional factors, ensuring your sidewalks remain level and intact for decades.</p>
-                <p>City ordinances in Meridian, Boise, and surrounding municipalities typically require property owners to maintain sidewalks adjacent to their properties. When city inspectors identify trip hazards, severe cracking, or ADA violations, they issue notices requiring repair or replacement within specified timeframes. We work regularly with homeowners and business owners to bring non-compliant sidewalks up to code, avoiding fines and liability concerns.</p>
+            <div class="container">
+                <div class="content-width">
+                    <h2>Why Concrete Sidewalks Are Essential for Idaho Properties</h2>
+                    <p>Concrete sidewalks serve both practical and aesthetic purposes for Treasure Valley properties. They provide safe, stable walking surfaces that protect visitors from mud, ice, and uneven ground while guiding foot traffic from driveways and streets to your entrance. For commercial properties, well-maintained sidewalks signal professionalism and care for customer safety. For homeowners, they enhance curb appeal and property value while reducing maintenance compared to gravel or dirt paths.</p>
+                    <p>Idaho's climate presents specific challenges for sidewalk construction. The freeze-thaw cycles that affect driveways equally impact walkways, requiring proper base preparation, adequate thickness, and strategic joint placement to prevent cracking. Meridian's clay soils expand and contract with moisture changes, potentially causing sidewalk sections to heave or settle. Our installation methods account for these regional factors, ensuring your sidewalks remain level and intact for decades.</p>
+                    <p>City ordinances in Meridian, Boise, and surrounding municipalities typically require property owners to maintain sidewalks adjacent to their properties. When city inspectors identify trip hazards, severe cracking, or ADA violations, they issue notices requiring repair or replacement within specified timeframes. We work regularly with homeowners and business owners to bring non-compliant sidewalks up to code, avoiding fines and liability concerns.</p>
 
-                <h2>Residential Sidewalk Installation</h2>
-                <p>Residential concrete sidewalks connect driveways to front doors, link garages to house entries, and create pathways through yards to patios, sheds, or garden areas. Standard residential walkways are 4 feet wide and 4 inches thick, poured over a 4-inch compacted gravel base. We use 3,000 to 3,500 PSI concrete with fiber mesh reinforcement to resist cracking from freeze-thaw cycles and root intrusion from nearby landscaping.</p>
-                <p>Control joints are cut or tooled every 4 to 5 feet to create planned weak points where the concrete can crack without visible damage. These joints are sealed with flexible caulk to prevent water infiltration while allowing natural expansion and contraction. Proper slope — typically 1/4 inch per foot away from structures — ensures water drains away from your foundation rather than pooling against it.</p>
-                <p>For homes in Meridian neighborhoods like Tuscany Village, Avion, or the established areas near Downtown, we match existing sidewalk styles to maintain neighborhood consistency. New construction in developing areas like southeast Meridian or Star allows more design flexibility, including curved paths, wider walkways, and decorative finishes that complement your home's architecture.</p>
+                    <h2>Residential Sidewalk Installation</h2>
+                    <p>Residential concrete sidewalks connect driveways to front doors, link garages to house entries, and create pathways through yards to patios, sheds, or garden areas. Standard residential walkways are 4 feet wide and 4 inches thick, poured over a 4-inch compacted gravel base. We use 3,000 to 3,500 PSI concrete with fiber mesh reinforcement to resist cracking from freeze-thaw cycles and root intrusion from nearby landscaping.</p>
+                    <p>Control joints are cut or tooled every 4 to 5 feet to create planned weak points where the concrete can crack without visible damage. These joints are sealed with flexible caulk to prevent water infiltration while allowing natural expansion and contraction. Proper slope — typically 1/4 inch per foot away from structures — ensures water drains away from your foundation rather than pooling against it.</p>
+                    <p>For homes in Meridian neighborhoods like Tuscany Village, Avion, or the established areas near Downtown, we match existing sidewalk styles to maintain neighborhood consistency. New construction in developing areas like southeast Meridian or Star allows more design flexibility, including curved paths, wider walkways, and decorative finishes that complement your home's architecture.</p>
 
-                <h2>Commercial Sidewalks and ADA Compliance</h2>
-                <p>Commercial properties face stricter requirements for sidewalk construction under the Americans with Disabilities Act (ADA). These federal regulations, enforced at the local level through building permits and inspections, ensure that walkways are accessible to people with mobility impairments. Non-compliant sidewalks expose business owners to lawsuits, fines, and forced reconstruction at greater expense than building correctly the first time.</p>
-                <p><strong>Key ADA requirements for commercial walkways include:</strong> Minimum 36-inch clear width (48 inches preferred for high-traffic areas). Maximum slope of 1:20 (5 percent) for running slope; 1:48 (2 percent) for cross slope. Smooth, slip-resistant surfaces without abrupt level changes exceeding 1/4 inch. Detectable warning surfaces (truncated domes) at curb ramps and hazardous drop-offs. Handrails on ramps with slopes steeper than 1:20. Level landing areas at doorways and direction changes.</p>
-                <p>We design and install ADA-compliant sidewalks for offices, retail stores, medical facilities, restaurants, and multi-family housing throughout the Treasure Valley. Our team stays current with ADA standards and local building codes, ensuring your walkways pass inspection on the first attempt. For existing properties with non-compliant sidewalks, we assess violations and provide cost-effective remediation plans that bring your walkways into compliance without unnecessary reconstruction.</p>
+                    <h2>Commercial Sidewalks and ADA Compliance</h2>
+                    <p>Commercial properties face stricter requirements for sidewalk construction under the Americans with Disabilities Act (ADA). These federal regulations, enforced at the local level through building permits and inspections, ensure that walkways are accessible to people with mobility impairments. Non-compliant sidewalks expose business owners to lawsuits, fines, and forced reconstruction at greater expense than building correctly the first time.</p>
+                    <p><strong>Key ADA requirements for commercial walkways include:</strong> Minimum 36-inch clear width (48 inches preferred for high-traffic areas). Maximum slope of 1:20 (5 percent) for running slope; 1:48 (2 percent) for cross slope. Smooth, slip-resistant surfaces without abrupt level changes exceeding 1/4 inch. Detectable warning surfaces (truncated domes) at curb ramps and hazardous drop-offs. Handrails on ramps with slopes steeper than 1:20. Level landing areas at doorways and direction changes.</p>
+                    <p>We design and install ADA-compliant sidewalks for offices, retail stores, medical facilities, restaurants, and multi-family housing throughout the Treasure Valley. Our team stays current with ADA standards and local building codes, ensuring your walkways pass inspection on the first attempt. For existing properties with non-compliant sidewalks, we assess violations and provide cost-effective remediation plans that bring your walkways into compliance without unnecessary reconstruction.</p>
 
-                <h2>Decorative Sidewalk Options</h2>
-                <p>Standard broom-finish concrete is practical and affordable, but decorative options elevate your property's appearance while maintaining durability. Popular decorative sidewalk treatments in the Treasure Valley include:</p>
-                <p><strong>Stamped concrete:</strong> Patterns like ashlar slate, cobblestone, or flagstone add texture and visual interest. Stamped sidewalks work particularly well for paths leading to front entries or connecting outdoor living spaces. Color options range from natural grays and tans to warm terracotta tones that complement Idaho's high desert landscape.</p>
-                <p><strong>Exposed aggregate:</strong> Revealing the natural stone within the concrete creates a slip-resistant, attractive surface. Exposed aggregate sidewalks are popular in Eagle and northwest Boise where homeowners seek distinctive landscaping elements. The exposed stone provides excellent traction during icy conditions.</p>
-                <p><strong>Integral color:</strong> Adding pigment to the concrete mix creates consistent color throughout the slab, avoiding the surface wear issues of topical stains. Earth tones like sandstone, terra cotta, and warm gray blend naturally with Treasure Valley surroundings.</p>
-                <p><strong>Scored patterns:</strong> Cutting decorative patterns into freshly placed concrete creates the appearance of pavers or tile without the maintenance issues of individual units. Diamond, square, or custom geometric patterns add visual interest to otherwise plain walkways.</p>
-
-                <h2>Idaho-Specific Installation Standards</h2>
-                <p>Concrete sidewalk installation in Idaho requires adaptations for our unique climate and soil conditions. We follow best practices developed through decades of local experience:</p>
-                <p><strong>Base preparation:</strong> Meridian's clay soils require 6 inches of compacted gravel base (versus 4 inches in sandy soils) to prevent heaving. We use 3/4-inch crushed gravel that compacts tightly while allowing drainage. Soil testing determines whether additional stabilization is needed.</p>
-                <p><strong>Reinforcement:</strong> Fiber mesh reinforcement is standard in all our sidewalk installations. For areas with known soil movement or heavy tree root pressure, we add steel rebar on 18-inch centers. This prevents cracks from propagating across the entire slab width.</p>
-                <p><strong>Joint spacing:</strong> Control joints are placed at intervals equal to the slab width in feet (so a 4-foot-wide walkway gets joints every 4 feet). This follows the rule that concrete cracks at approximately 24 to 36 times its thickness, and planned joints control where those cracks occur.</p>
-                <p><strong>Curing:</strong> Idaho's dry climate and intense sun can cause concrete to cure too quickly, leading to surface cracking. We apply curing compounds immediately after finishing and keep sidewalks moist for 7 days to ensure proper hydration and strength development.</p>
-                <p><strong>Winter considerations:</strong> We don't pour concrete sidewalks when temperatures are below 40°F or when freezing is expected within 24 hours of placement. For late fall projects, we use heated concrete mixes and insulating blankets to protect curing concrete from frost damage.</p>
-
-                <h2>Sidewalk Repair and Replacement</h2>
-                <p>Existing sidewalks damaged by freeze-thaw cycles, tree roots, or settling can often be repaired rather than fully replaced. We assess each section to determine whether spot repairs, mudjacking, or full replacement is the most cost-effective solution. Trip hazards created by heaved sections can be ground down or lifted through slab jacking. Severely cracked or spalled sections are removed and replaced, with careful attention to matching the elevation and finish of adjacent intact sidewalks.</p>
-                <p>For more information about our concrete services, explore our <a href="concrete-driveways.html">concrete driveways</a>, <a href="concrete-patios.html">concrete patios</a>, <a href="concrete-repair.html">concrete repair</a>, <a href="foundations-slabs.html">foundations and slabs</a>, <a href="retaining-walls.html">retaining walls</a>, and <a href="stamped-concrete.html">stamped concrete</a> pages.</p>
-
-                <h2>Serving Meridian and the Treasure Valley</h2>
-                <p>We install concrete sidewalks throughout the greater Boise area, including <a href="meridian-id.html">Meridian</a>, <a href="boise-id.html">Boise</a>, <a href="eagle-id.html">Eagle</a>, <a href="kuna-id.html">Kuna</a>, <a href="nampa-id.html">Nampa</a>, and <a href="star-id.html">Star</a>. Our crews understand municipal requirements in each city and coordinate permits and inspections as needed. Whether you're a homeowner replacing a cracked front walk or a property manager installing ADA-compliant commercial walkways, we deliver professional results that meet code and exceed expectations.</p>
-
-                <h2>Free Sidewalk Estimates</h2>
-                <p>Every sidewalk project begins with an on-site consultation. We measure the proposed walkway, assess soil conditions, discuss design options, and provide a detailed written estimate. Most residential sidewalk projects are completed within 1-2 days, with minimal disruption to your property. Call (208) 555-0147 or request your free estimate online to discuss your sidewalk needs.</p>
+                    <h2>Decorative Sidewalk Options</h2>
+                    <p>Standard broom-finish concrete is practical and affordable, but decorative options elevate your property's appearance while maintaining durability. Popular decorative sidewalk treatments in the Treasure Valley include:</p>
+                    <p><strong>Stamped concrete:</strong> Patterns like ashlar slate, cobblestone, or flagstone add texture and visual interest. Stamped sidewalks work particularly well for paths leading to front entries or connecting outdoor living spaces. Color options range from natural grays and tans to warm terracotta tones that complement Idaho's high desert landscape.</p>
+                    <p><strong>Exposed aggregate:</strong> Revealing the natural stone within the concrete creates a slip-resistant, attractive surface. Exposed aggregate sidewalks are popular in Eagle and northwest Boise where homeowners seek distinctive landscaping elements. The exposed stone provides excellent traction during icy conditions.</p>
+                    <p><strong>Integral color:</strong> Adding pigment to the concrete mix creates consistent color throughout the slab, avoiding the surface wear issues of topical stains. Earth tones like sandstone, terra cotta, and warm gray blend naturally with Treasure Valley surroundings.</p>
+                    <p><strong>Scored patterns:</strong> Cutting decorative patterns into freshly placed concrete creates the appearance of pavers or tile without the maintenance issues of individual units. Diamond, square, or custom geometric patterns add visual interest to otherwise plain walkways.</p>
+                </div>
             </div>
         </section>
 
-        <section class="section section-inverse">
-            <div class="container text-center">
+        <section class="section section-alt">
+            <div class="container">
+                <div class="content-width">
+                    <h2>Idaho-Specific Installation Standards</h2>
+                    <p>Concrete sidewalk installation in Idaho requires adaptations for our unique climate and soil conditions. We follow best practices developed through decades of local experience:</p>
+                    <p><strong>Base preparation:</strong> Meridian's clay soils require 6 inches of compacted gravel base (versus 4 inches in sandy soils) to prevent heaving. We use 3/4-inch crushed gravel that compacts tightly while allowing drainage. Soil testing determines whether additional stabilization is needed.</p>
+                    <p><strong>Reinforcement:</strong> Fiber mesh reinforcement is standard in all our sidewalk installations. For areas with known soil movement or heavy tree root pressure, we add steel rebar on 18-inch centers. This prevents cracks from propagating across the entire slab width.</p>
+                    <p><strong>Joint spacing:</strong> Control joints are placed at intervals equal to the slab width in feet (so a 4-foot-wide walkway gets joints every 4 feet). This follows the rule that concrete cracks at approximately 24 to 36 times its thickness, and planned joints control where those cracks occur.</p>
+                    <p><strong>Curing:</strong> Idaho's dry climate and intense sun can cause concrete to cure too quickly, leading to surface cracking. We apply curing compounds immediately after finishing and keep sidewalks moist for 7 days to ensure proper hydration and strength development.</p>
+                    <p><strong>Winter considerations:</strong> We don't pour concrete sidewalks when temperatures are below 40°F or when freezing is expected within 24 hours of placement. For late fall projects, we use heated concrete mixes and insulating blankets to protect curing concrete from frost damage.</p>
+
+                    <h2>Sidewalk Repair and Replacement</h2>
+                    <p>Existing sidewalks damaged by freeze-thaw cycles, tree roots, or settling can often be repaired rather than fully replaced. We assess each section to determine whether spot repairs, mudjacking, or full replacement is the most cost-effective solution. Trip hazards created by heaved sections can be ground down or lifted through slab jacking. Severely cracked or spalled sections are removed and replaced, with careful attention to matching the elevation and finish of adjacent intact sidewalks.</p>
+                    <p>For more information about our concrete services, explore our <a href="concrete-driveways.html">concrete driveways</a>, <a href="concrete-patios.html">concrete patios</a>, <a href="concrete-repair.html">concrete repair</a>, <a href="foundations-slabs.html">foundations and slabs</a>, <a href="retaining-walls.html">retaining walls</a>, and <a href="stamped-concrete.html">stamped concrete</a> pages.</p>
+
+                    <h2>Serving Meridian and the Treasure Valley</h2>
+                    <p>We install concrete sidewalks throughout the greater Boise area, including <a href="meridian-id.html">Meridian</a>, <a href="boise-id.html">Boise</a>, <a href="eagle-id.html">Eagle</a>, <a href="kuna-id.html">Kuna</a>, <a href="nampa-id.html">Nampa</a>, and <a href="star-id.html">Star</a>. Our crews understand municipal requirements in each city and coordinate permits and inspections as needed. Whether you're a homeowner replacing a cracked front walk or a property manager installing ADA-compliant commercial walkways, we deliver professional results that meet code and exceed expectations.</p>
+
+                    <h2>Free Sidewalk Estimates</h2>
+                    <p>Every sidewalk project begins with an on-site consultation. We measure the proposed walkway, assess soil conditions, discuss design options, and provide a detailed written estimate. Most residential sidewalk projects are completed within 1-2 days, with minimal disruption to your property. Call (208) 555-0147 or request your free estimate online to discuss your sidewalk needs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="container">
                 <h2>Ready for New Concrete Sidewalks?</h2>
                 <p>Professional installation, ADA compliance, and walkways built for Idaho weather. Free estimates.</p>
-                <div class="hero-ctas">
-                    <a href="tel:+12085550147" class="btn btn-primary">(208) 555-0147</a>
-                    <a href="contact.html" class="btn btn-secondary">Request a Quote</a>
+                <div class="hero-ctas" style="justify-content: center;">
+                    <a href="tel:2085550147" class="btn btn-inverse btn-lg">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        (208) 555-0147
+                    </a>
+                    <a href="contact.html" class="btn btn-ghost btn-lg">Request a Quote Online</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-grid">
-            <div class="footer-col">
-                <h3>Meridian Concrete Solutions</h3>
-                <p>123 E Fairview Ave<br>Meridian, ID 83642</p>
-                <p><a href="tel:+12085550147">(208) 555-0147</a></p>
-                <p><a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a></p>
-                <p>Mon–Sat: 7:00 AM – 6:00 PM</p>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/" class="logo" style="margin-bottom: 1.25rem;">
+                    <svg class="logo-icon" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="42" height="42" rx="8" fill="#c96442"/><path d="M10 30L18 18L26 26L34 12" stroke="#f4f3ee" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="34" cy="12" r="3.5" fill="#f4f3ee"/></svg>
+                    <span class="logo-text" style="color: #f4f3ee;">Meridian Concrete <span style="color: rgba(244, 243, 238, 0.65);">Solutions</span></span>
+                </a>
+                <p>Your trusted concrete contractor serving Meridian and the Treasure Valley since 2010.</p>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span>123 E Fairview Ave<br>Meridian, ID 83642</span>
+                </div>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <a href="tel:2085550147">(208) 555-0147</a>
+                </div>
             </div>
-            <div class="footer-col">
-                <h3>Services</h3>
-                <a href="concrete-driveways.html">Concrete Driveways</a>
-                <a href="concrete-patios.html">Concrete Patios</a>
-                <a href="stamped-concrete.html">Stamped Concrete</a>
-                <a href="concrete-repair.html">Concrete Repair</a>
-                <a href="concrete-sidewalks.html">Sidewalks & Walkways</a>
-                <a href="foundations-slabs.html">Foundations & Slabs</a>
-                <a href="retaining-walls.html">Retaining Walls</a>
-            </div>
-            <div class="footer-col">
-                <h3>Service Areas</h3>
-                <a href="boise-id.html">Boise</a>
-                <a href="meridian-id.html">Meridian</a>
-                <a href="eagle-id.html">Eagle</a>
-                <a href="kuna-id.html">Kuna</a>
-                <a href="nampa-id.html">Nampa</a>
-                <a href="star-id.html">Star</a>
-            </div>
-            <div class="footer-col">
-                <h3>Company</h3>
-                <a href="about.html">About Us</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Service</a>
-            </div>
+            <div class="footer-col"><h4>Services</h4><ul><li><a href="concrete-driveways.html">Concrete Driveways</a></li><li><a href="concrete-patios.html">Concrete Patios</a></li><li><a href="stamped-concrete.html">Stamped Concrete</a></li><li><a href="concrete-repair.html">Concrete Repair</a></li><li><a href="concrete-sidewalks.html">Sidewalks &amp; Walkways</a></li><li><a href="foundations-slabs.html">Foundations &amp; Slabs</a></li><li><a href="retaining-walls.html">Retaining Walls</a></li></ul></div>
+            <div class="footer-col"><h4>Service Areas</h4><ul><li><a href="meridian-id.html">Meridian</a></li><li><a href="boise-id.html">Boise</a></li><li><a href="eagle-id.html">Eagle</a></li><li><a href="kuna-id.html">Kuna</a></li><li><a href="nampa-id.html">Nampa</a></li><li><a href="star-id.html">Star</a></li></ul></div>
+            <div class="footer-col"><h4>Contact</h4><div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:info@meridianidconcrete.com">info@meridianidconcrete.com</a></div><div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><span>Mon-Sat: 7:00 AM - 6:00 PM</span></div></div>
         </div>
-        <div class="container footer-bottom">
-            <p>&copy; 2024 Meridian Concrete Solutions. All rights reserved. Licensed & insured.</p>
-        </div>
+        <div class="footer-bottom"><p>&copy; 2026 Meridian Concrete Solutions. All rights reserved.</p><p><a href="privacy.html">Privacy Policy</a><span>|</span><a href="terms.html">Terms of Service</a></p></div>
     </footer>
-
-    <div class="mobile-cta">
-        <a href="tel:+12085550147" class="btn btn-primary btn-full">Call (208) 555-0147</a>
-    </div>
-
+    <div class="mobile-cta"><a href="tel:2085550147"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call (208) 555-0147</a></div>
     <script src="js/main.js"></script>
 </body>
 </html>
