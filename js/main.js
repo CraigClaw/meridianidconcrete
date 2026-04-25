@@ -1,71 +1,48 @@
-/* Meridian Concrete Solutions - JavaScript */
-document.addEventListener('DOMContentLoaded', function() {
+// Meridian Concrete Solutions - Main JS
+document.addEventListener('DOMContentLoaded', () => {
   // Mobile menu toggle
   const menuToggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('nav');
-  if (menuToggle && nav) {
-    menuToggle.addEventListener('click', function() {
-      nav.classList.toggle('open');
-      menuToggle.textContent = nav.classList.contains('open') ? '✕' : '☰';
+  const navLinks = document.querySelector('.nav-links');
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuToggle.textContent = navLinks.classList.contains('active') ? '✕' : '☰';
+    });
+    // Close menu on link click (mobile)
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          navLinks.classList.remove('active');
+          menuToggle.textContent = '☰';
+        }
+      });
     });
   }
 
   // FAQ accordion
-  document.querySelectorAll('.faq-question').forEach(function(q) {
-    q.addEventListener('click', function() {
-      this.classList.toggle('open');
-    });
-  });
-
-  // Smooth scroll for anchor links
-  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
-    a.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling;
+      const isOpen = answer.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
+      document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('active'));
+      // Toggle current
+      if (!isOpen) {
+        answer.classList.add('open');
+        btn.classList.add('active');
       }
     });
   });
 
-  // Form submission handler (placeholder)
-  document.querySelectorAll('form.contact-form, form.quote-form').forEach(function(form) {
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const btn = form.querySelector('button[type="submit"]');
-      const originalText = btn.textContent;
-      btn.textContent = 'Sending...';
-      btn.disabled = true;
-      // Simulate form submission
-      setTimeout(function() {
-        btn.textContent = '✓ Message Sent!';
-        btn.style.background = '#28a745';
-        setTimeout(function() {
-          btn.textContent = originalText;
-          btn.style.background = '';
-          btn.disabled = false;
-          form.reset();
-        }, 3000);
-      }, 1500);
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
   });
-
-  // Lazy load images
-  if ('IntersectionObserver' in window) {
-    const imgObserver = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          const img = entry.target;
-          if (img.dataset.src) {
-            img.src = img.dataset.src;
-            img.removeAttribute('data-src');
-          }
-          imgObserver.unobserve(img);
-        }
-      });
-    });
-    document.querySelectorAll('img[data-src]').forEach(function(img) {
-      imgObserver.observe(img);
-    });
-  }
 });
