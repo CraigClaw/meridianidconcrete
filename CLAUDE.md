@@ -54,7 +54,7 @@ This site uses a warm editorial aesthetic. NOT corporate blue, NOT generic contr
 - Headlines: `text-wrap: balance`. Body: `text-wrap: pretty`.
 
 ### Components
-- **Primary Button:** terracotta fill (#c96442), cream text, radius 6px, padding 12px 24px, weight 600. Hover: #b55738, no lift/scale.
+- **Primary Button:** terracotta fill (#b15335), cream text, radius 6px, padding 12px 24px, weight 600. Hover: #964530, no lift/scale.
 - **Secondary Button:** 1px border var(--border), ink text, transparent fill. Hover: bg-secondary.
 - **Ghost Link:** ink text, terracotta underline on hover.
 - **Cards:** bg-secondary, no border by default, radius 8px, padding 24px. Hover: border appears.
