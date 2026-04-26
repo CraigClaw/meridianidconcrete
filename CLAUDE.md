@@ -32,8 +32,8 @@ This site uses a warm editorial aesthetic. NOT corporate blue, NOT generic contr
 --accent-hover:    #964530   /* darker terracotta on hover, WCAG AA with cream text */
 --accent-soft:     #e89268   /* soft terracotta, callouts */
 --border:          #d8d3c8   /* warm border */
---success:         #6b7a3d   /* olive green, verified badges */
---warning:         #c98a42   /* amber */
+--success:         #5a6a32   /* olive green, verified badges — WCAG AA */
+--warning:         #7a6b2e   /* amber — WCAG AA */
 --danger:          #a53e2a   /* red */
 --surface:         #ffffff   /* white cards on cream bg */
 ```
