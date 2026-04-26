@@ -26,10 +26,10 @@ This site uses a warm editorial aesthetic. NOT corporate blue, NOT generic contr
 --bg-secondary:    #eeede6   /* subtle surface lift, cards */
 --bg-inverse:      #191817   /* near-black, footer + CTA sections */
 --text-primary:    #191817   /* ink, body text */
---text-secondary:  #5a554e   /* warm gray, descriptions */
---text-muted:      #8a847a   /* light text, captions */
---accent:          #c96442   /* terracotta — PRIMARY ACTION COLOR */
---accent-hover:    #b55738   /* darker terracotta on hover */
+--text-secondary:  #4d4a43   /* warm gray, descriptions — WCAG AA on cream */
+--text-muted:      #6f695f   /* subtle text, captions — WCAG AA on cream/white */
+--accent:          #b15335   /* terracotta — PRIMARY ACTION COLOR, WCAG AA with cream text */
+--accent-hover:    #964530   /* darker terracotta on hover, WCAG AA with cream text */
 --accent-soft:     #e89268   /* soft terracotta, callouts */
 --border:          #d8d3c8   /* warm border */
 --success:         #6b7a3d   /* olive green, verified badges */
