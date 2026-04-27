@@ -1,0 +1,14 @@
+{
+    "name": "Meridian Concrete Solutions",
+    "short_name": "Meridian Concrete",
+    "description": "Professional concrete services in Meridian, ID and the Treasure Valley.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#191817",
+    "theme_color": "#c96542",
+    "icons": [
+        {"src": "images/icon-192.png", "sizes": "192x192", "type": "image/png"},
+        {"src": "images/icon-512.png", "sizes": "512x512", "type": "image/png"},
+        {"src": "images/icon.svg", "sizes": "any", "type": "image/svg+xml"}
+    ]
+}
