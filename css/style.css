@@ -1812,20 +1812,26 @@ p:last-child {
 }
 @media (max-width: 768px) {
   h1 {
-    font-size: 2rem;
+    font-size: clamp(1.75rem, 6vw, 2rem);
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: clamp(1.375rem, 4vw, 1.5rem);
+  }
+  h3 {
+    font-size: clamp(1.1rem, 3vw, 1.25rem);
   }
   .section {
-    padding: 3.5rem 0;
+    padding: 3rem 0;
+  }
+  .container {
+    padding: 0 1rem;
   }
   .hero {
-    padding: 6.5rem 0 3.5rem;
+    padding: 5rem 0 2.5rem;
   }
   .hero-inner {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
   }
   .hero-content {
     max-width: 100%;
@@ -1834,23 +1840,111 @@ p:last-child {
   .hero p {
     margin-left: auto;
     margin-right: auto;
+    font-size: 1rem;
   }
   .hero-ctas {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+  .hero-ctas .btn {
+    width: 100%;
     justify-content: center;
   }
   .hero-image {
     order: -1;
+    max-width: 400px;
+    margin: 0 auto;
   }
+  /* Fix inline-style quote grids on mobile */
+  .quote-grid,
+  div[style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+  /* Quote form stacked on mobile */
+  .quote-form-wrap {
+    position: static !important;
+  }
+  /* Stats: 2x2 on mobile */
+  .stats-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1.25rem !important;
+  }
+  .stat-number {
+    font-size: 2rem;
+  }
+  .stat-label {
+    font-size: 0.8125rem;
+  }
+  .stat-item:not(:last-child)::after {
+    display: none;
+  }
+  /* Services cards single column on small mobile */
+  .services-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .features-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1rem;
+  }
+  /* Testimonials: stack on mobile */
+  .testimonials-grid {
+    grid-template-columns: 1fr !important;
+  }
+  /* Location/info cards: single column on mobile */
+  .info-grid {
+    grid-template-columns: 1fr !important;
+  }
+  /* Footer: stack columns */
   .footer-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
   .footer-brand {
     grid-column: 1 / -1;
   }
+  /* Form inputs full width */
   .form-row {
     grid-template-columns: 1fr;
   }
+  /* CTA banner */
+  .cta-banner {
+    padding: 3.5rem 1rem;
+  }
+  .cta-banner h2 {
+    font-size: 1.5rem;
+  }
+  /* Page header */
+  .page-header {
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+  }
+  .page-header h1 {
+    font-size: clamp(1.75rem, 6vw, 2.25rem);
+  }
+  /* Blog grid stacked */
+  .blog-grid {
+    grid-template-columns: 1fr !important;
+  }
+  /* Sidebar elements: static on mobile */
+  .page-with-sidebar {
+    grid-template-columns: 1fr !important;
+  }
+  .page-sidebar {
+    position: static;
+    order: -1;
+  }
+  /* FAQ sizing */
+  .faq-question {
+    font-size: 0.9375rem;
+    padding: 1rem 0;
+  }
+  .faq-answer {
+    font-size: 0.9375rem;
+  }
+  /* Nav hamburger */
   .mobile-cta {
     display: block;
   }
@@ -1923,20 +2017,35 @@ p:last-child {
     background: rgba(255,255,255,0.1);
     color: white;
   }
-  .stat-number {
-    font-size: 2.25rem;
+  /* Reduce horizontal scroll risks */
+  .card {
+    padding: 1.25rem;
   }
-  .stat-item:not(:last-child)::after {
-    display: none;
+  .testimonial-card {
+    padding: 1.5rem;
   }
-  .page-header {
-    padding-top: 7rem;
+  /* Trust badges wrap */
+  .trust-badges {
+    justify-content: center;
   }
-  .faq-question {
-    font-size: 0.9375rem;
-    padding: 1.25rem 0;
+  /* Quote form reduce padding */
+  .quote-form-wrap {
+    padding: 1.25rem;
   }
 }
+/* Prevent horizontal overflow from any element */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+img, video, svg, iframe {
+  max-width: 100%;
+  height: auto;
+}
+table {
+  display: block;
+  overflow-x: auto;
+}
+
 @media (max-width: 480px) {
   .footer-grid {
     grid-template-columns: 1fr;
@@ -1953,6 +2062,23 @@ p:last-child {
   .testimonials-grid,
   .features-grid {
     grid-template-columns: 1fr;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+  .container {
+    padding: 0 0.75rem;
+  }
+  .card {
+    padding: 1rem;
+  }
+  .section {
+    padding: 2.5rem 0;
+  }
+  .mobile-cta-bar .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8125rem;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
